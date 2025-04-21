@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//teste commit
-
 public class Aluno : IComparable<Aluno>, IRegistro, 
                       ICriterioDeSeparacao<Aluno>
 {

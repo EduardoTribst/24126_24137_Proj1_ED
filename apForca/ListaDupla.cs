@@ -281,12 +281,12 @@ public class ListaDupla<Dado>
     else
       if (atual == ultimo)
       {
-        anterior.Prox = null;   // desliga o último nó
-        ultimo = anterior;
+        atual.Ant.Prox = null;   // desliga o último nó
+        ultimo = Atual.Ant;
       }
       else     // nó interno a ser excluido
       {
-        anterior.Prox = atual.Prox;
+        atual.Ant.Prox = atual.Prox;
       }
 
     quantosNos--;

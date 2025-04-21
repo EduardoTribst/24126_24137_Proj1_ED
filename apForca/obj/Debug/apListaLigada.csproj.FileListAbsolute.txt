@@ -55,3 +55,13 @@ P:\19-Informática\2025\2o Ano\TI221 - Estruturas de Dados\exemplos\Listas Dupla
 P:\19-Informática\2025\2o Ano\TI221 - Estruturas de Dados\exemplos\Listas Duplamente Ligadas\apListaLigada1_a_4\obj\Debug\apListaLigada.csproj.CoreCompileInputs.cache
 P:\19-Informática\2025\2o Ano\TI221 - Estruturas de Dados\exemplos\Listas Duplamente Ligadas\apListaLigada1_a_4\obj\Debug\apListaLigada.exe
 P:\19-Informática\2025\2o Ano\TI221 - Estruturas de Dados\exemplos\Listas Duplamente Ligadas\apListaLigada1_a_4\obj\Debug\apListaLigada.pdb
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\bin\Debug\apListaLigada.exe.config
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\bin\Debug\apListaLigada.exe
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\bin\Debug\apListaLigada.pdb
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.csproj.AssemblyReference.cache
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.FrmAlunos.resources
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.Properties.Resources.resources
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.csproj.GenerateResource.cache
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.csproj.CoreCompileInputs.cache
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.exe
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.pdb
