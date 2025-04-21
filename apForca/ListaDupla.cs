@@ -249,12 +249,15 @@ public class ListaDupla<Dado>
     // Existe() encontrou intervalo de inclusão do novo nó (entre anterior e atual)
 
     var novo = new NoDuplo<Dado>(dados);
-    anterior.Prox = novo;   // liga anterior ao novo
     novo.Prox = atual;      // e novo no atual
+    novo.Ant = atual.Ant;   // liga novo ao anterior
+    atual.Ant.Prox = novo;  // liga anterior ao novo
+    atual.Ant = novo;       // liga novo ao anterior do atual
+    
 
-    if (anterior == ultimo)  // se incluiu ao final da lista,
-       ultimo = novo;        // atualiza o apontador ultimo
-    quantosNos++;            // incrementa número de nós da lista     	}	
+    if (novo.Ant == ultimo)  // se incluiu ao final da lista,
+      ultimo = novo;        // atualiza o apontador ultimo
+    quantosNos++;            // incrementa número de nós da lista	
   }
 
   public bool Remover(Dado dadoARemover)
