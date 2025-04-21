@@ -1,5 +1,8 @@
-﻿using System;
+﻿// Projeto desenvolvido por:
+// Eduardo 24126
+// Júlio 24137
 
+using System;
 public class NoDuplo<Dado> where Dado : IComparable<Dado>, IRegistro                                      
 {
   NoDuplo<Dado> ant;
