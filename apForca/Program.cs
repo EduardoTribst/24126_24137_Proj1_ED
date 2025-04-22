@@ -16,7 +16,7 @@ namespace apListaLigada
     {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new FrmAlunos());
+      Application.Run(new FrmDicionario());
     }
   }
 }

@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace apListaLigada
 {
-  public partial class FrmAlunos : Form
+  public partial class FrmDicionario : Form
   {
-    ListaDupla<Aluno> lista1;
+    ListaDupla<Palavra> lista1;
 
-    public FrmAlunos()
+    public FrmDicionario()
     {
       InitializeComponent();
     }
@@ -23,7 +23,7 @@ namespace apListaLigada
 
     }
 
-    private void FazerLeitura(ref ListaDupla<Aluno> qualLista)
+    private void FazerLeitura(ref ListaDupla<Palavra> qualLista)
     {
       // instanciar a lista de palavras e dicas
       // pedir ao usuário o nome do arquivo de entrada
