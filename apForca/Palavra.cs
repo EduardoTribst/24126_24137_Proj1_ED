@@ -12,12 +12,16 @@ namespace apListaLigada
 
         private int tamanho = 30;
 
+        private string dica;
+
         public int Tamanho
         {
             get { return tamanho; }
         }
 
         public string DescricaoPalavra { get; set; }
+
+        public string Dica { get; set; }
 
         public int CompareTo(Palavra outraPalavra)
         {
@@ -26,7 +30,7 @@ namespace apListaLigada
 
         public string FormatoDeArquivo()
         {
-            return descricaoPalavra.PadLeft(tamanho);
+            return $"{descricaoPalavra.PadLeft(tamanho) + dica}";
         }
     }
 }
