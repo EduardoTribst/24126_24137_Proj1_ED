@@ -30,8 +30,8 @@
     {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDicionario));
             this.label2 = new System.Windows.Forms.Label();
-            this.txtRA = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtPalavra = new System.Windows.Forms.TextBox();
+            this.txtDica = new System.Windows.Forms.TextBox();
             this.dlgAbrir = new System.Windows.Forms.OpenFileDialog();
             this.dlgSalvar = new System.Windows.Forms.SaveFileDialog();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -60,6 +60,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.slSituacao = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCadastro.SuspendLayout();
@@ -77,20 +79,20 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Dica:";
             // 
-            // txtRA
+            // txtPalavra
             // 
-            this.txtRA.Location = new System.Drawing.Point(79, 18);
-            this.txtRA.MaxLength = 30;
-            this.txtRA.Name = "txtRA";
-            this.txtRA.Size = new System.Drawing.Size(207, 24);
-            this.txtRA.TabIndex = 3;
+            this.txtPalavra.Location = new System.Drawing.Point(79, 18);
+            this.txtPalavra.MaxLength = 30;
+            this.txtPalavra.Name = "txtPalavra";
+            this.txtPalavra.Size = new System.Drawing.Size(207, 24);
+            this.txtPalavra.TabIndex = 3;
             // 
-            // txtNome
+            // txtDica
             // 
-            this.txtNome.Location = new System.Drawing.Point(79, 48);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(524, 24);
-            this.txtNome.TabIndex = 4;
+            this.txtDica.Location = new System.Drawing.Point(79, 48);
+            this.txtDica.Name = "txtDica";
+            this.txtDica.Size = new System.Drawing.Size(524, 24);
+            this.txtDica.TabIndex = 4;
             // 
             // dlgAbrir
             // 
@@ -121,7 +123,7 @@
             this.btnSair});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(634, 46);
+            this.toolStrip1.Size = new System.Drawing.Size(816, 46);
             this.toolStrip1.TabIndex = 21;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -178,6 +180,8 @@
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(28, 43);
             this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // toolStripSeparator3
@@ -251,7 +255,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 55);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(617, 326);
+            this.tabControl1.Size = new System.Drawing.Size(799, 330);
             this.tabControl1.TabIndex = 22;
             this.tabControl1.Enter += new System.EventHandler(this.tabControl1_Enter);
             // 
@@ -259,12 +263,12 @@
             // 
             this.tpCadastro.Controls.Add(this.label1);
             this.tpCadastro.Controls.Add(this.label2);
-            this.tpCadastro.Controls.Add(this.txtRA);
-            this.tpCadastro.Controls.Add(this.txtNome);
+            this.tpCadastro.Controls.Add(this.txtPalavra);
+            this.tpCadastro.Controls.Add(this.txtDica);
             this.tpCadastro.Location = new System.Drawing.Point(4, 26);
             this.tpCadastro.Name = "tpCadastro";
             this.tpCadastro.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCadastro.Size = new System.Drawing.Size(609, 296);
+            this.tpCadastro.Size = new System.Drawing.Size(791, 300);
             this.tpCadastro.TabIndex = 0;
             this.tpCadastro.Text = "Cadastro";
             this.tpCadastro.UseVisualStyleBackColor = true;
@@ -285,7 +289,7 @@
             this.tpListagem.Location = new System.Drawing.Point(4, 22);
             this.tpListagem.Name = "tpListagem";
             this.tpListagem.Padding = new System.Windows.Forms.Padding(3);
-            this.tpListagem.Size = new System.Drawing.Size(609, 300);
+            this.tpListagem.Size = new System.Drawing.Size(791, 304);
             this.tpListagem.TabIndex = 1;
             this.tpListagem.Text = "Listagem";
             this.tpListagem.UseVisualStyleBackColor = true;
@@ -339,7 +343,7 @@
             this.tpForca.Location = new System.Drawing.Point(4, 22);
             this.tpForca.Name = "tpForca";
             this.tpForca.Padding = new System.Windows.Forms.Padding(3);
-            this.tpForca.Size = new System.Drawing.Size(609, 300);
+            this.tpForca.Size = new System.Drawing.Size(791, 304);
             this.tpForca.TabIndex = 2;
             this.tpForca.Text = "Forca";
             this.tpForca.UseVisualStyleBackColor = true;
@@ -349,10 +353,12 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
-            this.slRegistro});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 387);
+            this.slRegistro,
+            this.toolStripStatusLabel2,
+            this.slSituacao});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 391);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(634, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(816, 22);
             this.statusStrip1.TabIndex = 23;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -368,18 +374,30 @@
             this.slRegistro.Size = new System.Drawing.Size(70, 17);
             this.slRegistro.Text = "Registro:0/0";
             // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(55, 17);
+            this.toolStripStatusLabel2.Text = "Situação:";
+            // 
+            // slSituacao
+            // 
+            this.slSituacao.Name = "slSituacao";
+            this.slSituacao.Size = new System.Drawing.Size(16, 17);
+            this.slSituacao.Text = "...";
+            // 
             // FrmDicionario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(634, 409);
+            this.ClientSize = new System.Drawing.Size(816, 413);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FrmDicionario";
             this.Text = "Manutenção de Dicionário";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmAlunos_FormClosing);
-            this.Load += new System.EventHandler(this.FrmAlunos_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmDicionario_FormClosing);
+            this.Load += new System.EventHandler(this.FrmDicionario_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -397,8 +415,8 @@
 
     #endregion
     private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.TextBox txtRA;
-    private System.Windows.Forms.TextBox txtNome;
+    private System.Windows.Forms.TextBox txtPalavra;
+    private System.Windows.Forms.TextBox txtDica;
     private System.Windows.Forms.OpenFileDialog dlgAbrir;
     private System.Windows.Forms.SaveFileDialog dlgSalvar;
     private System.Windows.Forms.ToolStrip toolStrip1;
@@ -427,6 +445,8 @@
     private System.Windows.Forms.ToolStripStatusLabel slRegistro;
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.TabPage tpForca;
-  }
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel slSituacao;
+    }
 }
 

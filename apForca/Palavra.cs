@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace apListaLigada
     {
         private string descricaoPalavra;
 
-        private int tamanho = 30;
+        const int tamanho = 30;
 
         private string dica;
 
@@ -22,6 +23,18 @@ namespace apListaLigada
         public string DescricaoPalavra { get; set; }
 
         public string Dica { get; set; }
+
+        public Palavra(string descricaoPalavra, string dica)
+        {
+            DescricaoPalavra = descricaoPalavra;
+            Dica = dica;
+        }
+
+        public Palavra(string linha)
+        {
+            DescricaoPalavra = linha.Substring(0, tamanho);
+            Dica = linha.Substring(++tamanho);
+        }
 
         public int CompareTo(Palavra outraPalavra)
         {

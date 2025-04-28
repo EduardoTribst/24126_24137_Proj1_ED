@@ -9,135 +9,224 @@ using System.Windows.Forms;
 
 namespace apListaLigada
 {
-  public partial class FrmDicionario : Form
-  {
-    ListaDupla<Palavra> lista1;
-
-    public FrmDicionario()
+    public partial class FrmDicionario : Form
     {
-      InitializeComponent();
+        ListaDupla<Palavra> lista1;
+        Situacao situacaoAtual;
+
+        public FrmDicionario()
+        {
+            InitializeComponent();
+        }
+
+        public enum Situacao
+        {
+            INCLUINDO,
+            NAVEGANDO,
+            ALTERANDO,
+            EXCLUINDO
+        }
+
+        private void alterarSituacao(Situacao novaSituacao)
+        {
+            situacaoAtual = novaSituacao;
+            switch (situacaoAtual)
+            {
+                case Situacao.INCLUINDO:
+                    slSituacao.Text = "INCLUINDO (aperte CANCELAR para terminar o processo de inclusão).";
+                    break;
+                case Situacao.NAVEGANDO:
+                    slSituacao.Text = "NAVEGANDO";
+                    break;
+                case Situacao.ALTERANDO:
+                    slSituacao.Text = "ALTERANDO (clique em CANCELAR para cancelar o processo ou ALTERAR novamente para aplicar as alteração).";
+                    break;
+                case Situacao.EXCLUINDO:
+                    slSituacao.Text = "EXCLUINDO";
+                    break;
+            };
+        }
+
+        private void FazerLeitura(ref ListaDupla<Palavra> qualLista)
+        {
+            qualLista = new ListaDupla<Palavra>();
+
+            if (dlgAbrir.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader arquivo = new StreamReader(dlgAbrir.FileName);
+                string linha = "";
+
+                while (!arquivo.EndOfStream)
+                {
+                    linha = arquivo.ReadLine();
+                    qualLista.InserirAposFim(new Palavra(linha));
+                }
+                arquivo.Close();
+            }
+        }
+
+        private void btnIncluir_Click(object sender, EventArgs e)
+        {
+            if (txtPalavra.Text != "" && txtDica.Text != "")
+            {
+                var novaPalavra = new Palavra(txtPalavra.Text, txtDica.Text);
+                if (lista1.InserirEmOrdem(novaPalavra))
+                {
+                    MessageBox.Show("Palavra cadastrada com sucesso");
+                } 
+                else
+                {
+                    MessageBox.Show("Palavra já existe no cadastro");
+                }
+                ExibirRegistroAtual();
+            }
+        }
+
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (txtPalavra.Text != "")
+            {
+                var palavraProcurada = new Palavra(txtPalavra.Text, "");
+                if (!lista1.Existe(palavraProcurada))
+                {
+                    MessageBox.Show("Palavra não encontrada");
+                }
+                else
+                {
+                    ExibirRegistroAtual();
+                }
+            }
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (txtPalavra.Text != "")
+            {
+                if (situacaoAtual == Situacao.EXCLUINDO)
+                {
+                    if (lista1.Remover(new Palavra(txtPalavra.Text, "")))
+                    {
+                        MessageBox.Show("Palavra removida");
+                        ExibirRegistroAtual();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Palavra não encontrada");
+                    }
+                }
+                else
+                {
+                    alterarSituacao(Situacao.EXCLUINDO);
+                    MessageBox.Show("Clique novamente em EXCLUIR para confirmar ou cancele a operação com CANCELAR");
+                }
+            }
+        }
+
+        private void ExibirDados(ListaDupla<Palavra> aLista, ListBox lsb, Direcao qualDirecao)
+        {
+            lsb.Items.Clear();
+            var dadosDaLista = aLista.Listagem(qualDirecao);
+            foreach (Palavra palavra in dadosDaLista)
+            lsb.Items.Add(palavra);
+        }
+
+        private void tabControl1_Enter(object sender, EventArgs e)
+        {
+            rbFrente.PerformClick();
+        }
+
+        private void rbFrente_Click(object sender, EventArgs e)
+        {
+            ExibirDados(lista1, lsbDados, Direcao.paraFrente);
+        }
+
+        private void rbTras_Click(object sender, EventArgs e)
+        {
+            ExibirDados(lista1, lsbDados, Direcao.paraTras);
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            lista1.PosicionarNoInicio();
+            ExibirRegistroAtual();
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            lista1.Retroceder();
+            ExibirRegistroAtual();
+        }
+
+        private void btnProximo_Click(object sender, EventArgs e)
+        {
+            lista1.Avancar();
+            ExibirRegistroAtual();
+        }
+
+        private void btnFim_Click(object sender, EventArgs e)
+        {
+            lista1.PosicionarNoFinal();
+            ExibirRegistroAtual();
+        }
+
+        private void ExibirRegistroAtual()
+        {
+            if (!lista1.EstaVazia)
+            {
+                var palavraAtual = lista1[lista1.NumeroDoNoAtual];
+                txtPalavra.Text = palavraAtual.DescricaoPalavra;
+                txtDica.Text = palavraAtual.Dica;
+                slRegistro.Text = $"Registro: {lista1.NumeroDoNoAtual + 1}/{lista1.QuantosNos}";
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (situacaoAtual == Situacao.ALTERANDO) // apertou novamente
+            {
+                var palavraAAlterar = new Palavra(txtPalavra.Text, "");
+                if (lista1.Existe(palavraAAlterar))
+                {
+                    lista1.Atual.Info.Dica = txtDica.Text;
+                    MessageBox.Show($"A dica da palavra {lista1.Atual.Info.DescricaoPalavra} foi alterada com sucesso.");
+                }
+                else
+                {
+                    MessageBox.Show($"A palavra {lista1.Atual.Info.DescricaoPalavra} não está cadastrada.");
+                }
+                alterarSituacao(Situacao.NAVEGANDO);
+                ExibirRegistroAtual();
+            }
+            else
+            {
+                alterarSituacao(Situacao.ALTERANDO);
+            }
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            alterarSituacao(Situacao.NAVEGANDO);
+        }
+
+        private void FrmDicionario_Load(object sender, EventArgs e)
+        {
+            FazerLeitura(ref lista1);
+            lista1.PosicionarNoInicio();
+            ExibirRegistroAtual();
+        }
+
+        private void FrmDicionario_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (dlgSalvar.ShowDialog() == DialogResult.OK)
+            {
+                lista1.GravarDados(dlgSalvar.FileName);
+            }
+        }
     }
-
-    private void btnLerArquivo1_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void FazerLeitura(ref ListaDupla<Palavra> qualLista)
-    {
-      // instanciar a lista de palavras e dicas
-      // pedir ao usuário o nome do arquivo de entrada
-      // abrir esse arquivo e lê-lo linha a linha
-      // para cada linha, criar um objeto da classe de Palavra e Dica
-      // e inseri-0lo no final da lista duplamente ligada
-    }
-
-    private void btnIncluir_Click(object sender, EventArgs e)
-    {
-      // se o usuário digitou palavra e dica:
-      // criar objeto da classe Palavra e Dica para busca
-      // tentar incluir em ordem esse objeto na lista1
-      // se não incluiu (já existe) avisar o usuário
-    }
-
-
-    private void btnBuscar_Click(object sender, EventArgs e)
-    {
-      // se a palavra digitada não é vazia:
-      // criar um objeto da classe de Palavra e Dica para busca
-      // se a palavra existe na lista1, posicionar o ponteiro atual nesse nó e exibir o registro atual
-      // senão, avisar usuário que a palavra não existe
-      // exibir o nó atual
-    }
-
-    private void btnExcluir_Click(object sender, EventArgs e)
-    {
-      // para o nó atualmente visitado e exibido na tela:
-      // perguntar ao usuário se realmente deseja excluir essa palavra e dica
-      // se sim, remover o nó atual da lista duplamente ligada e exibir o próximo nó
-      // se não, manter como está
-    }
-
-    private void FrmAlunos_FormClosing(object sender, FormClosingEventArgs e)
-    {
-      // solicitar ao usuário que escolha o arquivo de saída
-      // percorrer a lista ligada e gravar seus dados no arquivo de saída
-    }
-
-    private void ExibirDados(ListaDupla<Aluno> aLista, ListBox lsb, Direcao qualDirecao)
-    {
-      lsb.Items.Clear();
-      var dadosDaLista = aLista.Listagem(qualDirecao);
-      foreach (Aluno aluno in dadosDaLista)
-        lsb.Items.Add(aluno);
-    }
-
-    private void tabControl1_Enter(object sender, EventArgs e)
-    {
-      rbFrente.PerformClick();
-    }
-
-    private void rbFrente_Click(object sender, EventArgs e)
-    {
-      ExibirDados(lista1, lsbDados, Direcao.paraFrente);
-    }
-
-    private void rbTras_Click(object sender, EventArgs e)
-    {
-      ExibirDados(lista1, lsbDados, Direcao.paraTras);
-    }
-
-    private void FrmAlunos_Load(object sender, EventArgs e)
-    {
-      // fazer a leitura do arquivo escolhido pelo usuário e armazená-lo na lista1
-      // posicionar o ponteiro atual no início da lista duplamente ligada
-      // Exibir o Registro Atual;
-    }
-
-    private void btnInicio_Click(object sender, EventArgs e)
-    {
-      // posicionar o ponteiro atual no início da lista duplamente ligada
-      // Exibir o Registro Atual;
-    }
-
-    private void btnAnterior_Click(object sender, EventArgs e)
-    {
-      // Retroceder o ponteiro atual para o nó imediatamente anterior 
-      // Exibir o Registro Atual;
-    }
-
-    private void btnProximo_Click(object sender, EventArgs e)
-    {
-      // Retroceder o ponteiro atual para o nó seguinte 
-      // Exibir o Registro Atual;
-    }
-
-    private void btnFim_Click(object sender, EventArgs e)
-    {
-      // posicionar o ponteiro atual no último nó da lista 
-      // Exibir o Registro Atual;
-    }
-
-    private void ExibirRegistroAtual()
-    {
-      // se a lista não está vazia:
-      // acessar o nó atual e exibir seus campos em txtDica e txtPalavra
-      // atualizar no status bar o número do registro atual / quantos nós na lista
-    }
-
-    private void btnEditar_Click(object sender, EventArgs e)
-    {
-      // alterar a dica e guardar seu novo valor no nó exibido
-    }
-
-    private void btnSair_Click(object sender, EventArgs e)
-    {
-      Close();
-    }
-
-    private void btnCancelar_Click(object sender, EventArgs e)
-    {
-
-    }
-  }
 }
