@@ -128,7 +128,7 @@ namespace apListaLigada
             lsb.Items.Clear();
             var dadosDaLista = aLista.Listagem(qualDirecao);
             foreach (Palavra palavra in dadosDaLista)
-            lsb.Items.Add(palavra);
+            lsb.Items.Add(palavra.DescricaoPalavra + " - " + palavra.Dica);
         }
 
         private void tabControl1_Enter(object sender, EventArgs e)
@@ -154,14 +154,28 @@ namespace apListaLigada
 
         private void btnAnterior_Click(object sender, EventArgs e)
         {
-            lista1.Retroceder();
-            ExibirRegistroAtual();
+            if (lista1.NumeroDoNoAtual == 0)
+            {
+                MessageBox.Show("Já está no primeiro nó! Não é possível retroceder.");
+            }
+            else
+            {
+                lista1.Retroceder();
+                ExibirRegistroAtual();
+            }
         }
 
         private void btnProximo_Click(object sender, EventArgs e)
         {
-            lista1.Avancar();
-            ExibirRegistroAtual();
+            if (lista1.NumeroDoNoAtual == lista1.QuantosNos-1)
+            {
+                MessageBox.Show("Já está no último nó! Não é possível avançar.");
+            }
+            else
+            {
+                lista1.Avancar();
+                ExibirRegistroAtual();
+            }
         }
 
         private void btnFim_Click(object sender, EventArgs e)

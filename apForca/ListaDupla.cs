@@ -27,25 +27,32 @@ public class ListaDupla<Dado>
     public void PosicionarNoFinal()
     {
         atual = ultimo;
-        NumeroDoNoAtual = quantosNos;
+        NumeroDoNoAtual = quantosNos - 1;
     }
 
     public void Avancar()
     {
-        atual = atual.Prox;
-        NumeroDoNoAtual++;
+        if (atual != ultimo || atual != null)
+        {
+            atual = atual.Prox;
+            NumeroDoNoAtual++;
+        }
     }
 
     public void Retroceder()
     {
-        atual = atual.Ant;
-        NumeroDoNoAtual--;
+        if (atual != primeiro || atual != null)
+        {
+            atual = atual.Ant;
+            NumeroDoNoAtual--;
+        }
     }
 
     public void PosicionarEm(int indice)
     {
         if (indice >= 0 && indice < quantosNos)
         {
+            atual = primeiro;
             for (int i = 0; i < indice; i++)
             {
                 atual = atual.Prox;
@@ -124,6 +131,7 @@ public class ListaDupla<Dado>
             ultimo = novoNo;
 
         novoNo.Prox = primeiro;
+        novoNo.Ant = null;
         primeiro = novoNo;
         quantosNos++;
     }
@@ -133,9 +141,15 @@ public class ListaDupla<Dado>
         var novoNo = new NoDuplo<Dado>(novoDado);
 
         if (EstaVazia)
+        {
             primeiro = novoNo;
+            novoNo.Ant = null;
+        }
         else
+        {
             ultimo.Prox = novoNo;
+            novoNo.Ant = ultimo;
+        }
 
         ultimo = novoNo;
         quantosNos++;

@@ -33,7 +33,7 @@ namespace apListaLigada
         public Palavra(string linha)
         {
             DescricaoPalavra = linha.Substring(0, tamanho);
-            Dica = linha.Substring(++tamanho);
+            Dica = linha.Substring(tamanho);
         }
 
         public int CompareTo(Palavra outraPalavra)
