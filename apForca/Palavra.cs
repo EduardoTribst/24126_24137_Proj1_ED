@@ -38,12 +38,12 @@ namespace apListaLigada
 
         public int CompareTo(Palavra outraPalavra)
         {
-            return descricaoPalavra.CompareTo(outraPalavra.DescricaoPalavra);
+            return DescricaoPalavra.CompareTo(outraPalavra.DescricaoPalavra);
         }
 
         public string FormatoDeArquivo()
         {
-            return $"{descricaoPalavra.PadLeft(tamanho) + dica}";
+            return $"{DescricaoPalavra.PadLeft(tamanho) + dica}";
         }
     }
 }

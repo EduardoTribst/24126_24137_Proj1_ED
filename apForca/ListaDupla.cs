@@ -255,11 +255,11 @@ public class ListaDupla<Dado>
             InserirAntesDoInicio(dados);  // dado ficará como primeiro da lista
         else
             // testa se nova chave < primeira chave
-            if (/*anterior == null && */ atual != null)
+            if (atual.Ant == null && atual != null)/*anterior == null && */
             InserirAntesDoInicio(dados); // liga novo nó antes do primeiro
         else
                 // testa se nova chave > última chave
-                if (/*anterior != null && */ atual == null)
+                if (atual.Ant != null && atual == null)/*anterior != null && */
             InserirAposFim(dados);
         else
             InserirNoMeio(dados);  // insere entre os nós anterior e atual
