@@ -175,6 +175,8 @@ public class ListaDupla<Dado>
         //anterior = null;
         atual = primeiro;
 
+        int posicaoDoNo = 0; // contador de nós, se a palavra existe, atualizar o numeroDoNoAtual
+
         //	Em seguida, é verificado se a lista está vazia. Caso esteja, é
         //	retornado false ao local de chamada, indicando que a chave não foi
         //	encontrada, e atual e anterior ficam valendo null
@@ -230,6 +232,7 @@ public class ListaDupla<Dado>
                 // deve seguir para o nó seguinte
                 //    anterior = atual;
                 atual = atual.Prox;
+                posicaoDoNo++; // incrementa o contador de nós
             }
 
         // por fim, caso a pesquisa tenha terminado, o apontador atual
@@ -237,6 +240,8 @@ public class ListaDupla<Dado>
         // encontrada, ou aponta o nó onde ela deveria estar para manter a
         // ordenação da lista. O apontador anterior aponta o nó anterior
         // ao atual
+
+        numeroDoNoAtual = posicaoDoNo;
         return achou;   // devolve o valor da variável achou, que indica
     }
 

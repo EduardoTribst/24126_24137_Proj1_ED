@@ -32,7 +32,7 @@ namespace apListaLigada
 
         public Palavra(string linha)
         {
-            DescricaoPalavra = linha.Substring(0, tamanho);
+            DescricaoPalavra = linha.Substring(0, tamanho).Trim();
             Dica = linha.Substring(tamanho);
         }
 
@@ -43,7 +43,7 @@ namespace apListaLigada
 
         public string FormatoDeArquivo()
         {
-            return $"{DescricaoPalavra.PadLeft(tamanho) + dica}";
+            return $"{DescricaoPalavra.PadRight(tamanho)}{Dica}";
         }
     }
 }

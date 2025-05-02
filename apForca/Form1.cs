@@ -63,7 +63,7 @@ namespace apListaLigada
                 }
                 arquivo.Close();
             }
-        }
+        }   
 
         private void btnIncluir_Click(object sender, EventArgs e)
         {
@@ -128,7 +128,7 @@ namespace apListaLigada
             lsb.Items.Clear();
             var dadosDaLista = aLista.Listagem(qualDirecao);
             foreach (Palavra palavra in dadosDaLista)
-            lsb.Items.Add(palavra.DescricaoPalavra + " - " + palavra.Dica);
+            lsb.Items.Add(palavra.DescricaoPalavra.PadLeft(30) + " - " + palavra.Dica);
         }
 
         private void tabControl1_Enter(object sender, EventArgs e)

@@ -286,10 +286,10 @@
             // 
             this.tpListagem.Controls.Add(this.groupBox1);
             this.tpListagem.Controls.Add(this.lsbDados);
-            this.tpListagem.Location = new System.Drawing.Point(4, 22);
+            this.tpListagem.Location = new System.Drawing.Point(4, 26);
             this.tpListagem.Name = "tpListagem";
             this.tpListagem.Padding = new System.Windows.Forms.Padding(3);
-            this.tpListagem.Size = new System.Drawing.Size(791, 304);
+            this.tpListagem.Size = new System.Drawing.Size(791, 300);
             this.tpListagem.TabIndex = 1;
             this.tpListagem.Text = "Listagem";
             this.tpListagem.UseVisualStyleBackColor = true;
@@ -331,11 +331,12 @@
             // 
             // lsbDados
             // 
+            this.lsbDados.Font = new System.Drawing.Font("Cascadia Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsbDados.FormattingEnabled = true;
-            this.lsbDados.ItemHeight = 17;
+            this.lsbDados.ItemHeight = 20;
             this.lsbDados.Location = new System.Drawing.Point(7, 62);
             this.lsbDados.Name = "lsbDados";
-            this.lsbDados.Size = new System.Drawing.Size(596, 191);
+            this.lsbDados.Size = new System.Drawing.Size(596, 184);
             this.lsbDados.TabIndex = 0;
             // 
             // tpForca
