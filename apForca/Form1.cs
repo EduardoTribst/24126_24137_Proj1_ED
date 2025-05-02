@@ -42,7 +42,7 @@ namespace apListaLigada
                     slSituacao.Text = "ALTERANDO (clique em CANCELAR para cancelar o processo ou ALTERAR novamente para aplicar as alteração).";
                     break;
                 case Situacao.EXCLUINDO:
-                    slSituacao.Text = "EXCLUINDO";
+                    slSituacao.Text = "EXCLUINDO (clique em CANCELAR para cancelar o processo ou EXCLUIR novamente para confirmar)";
                     break;
             };
         }
@@ -118,7 +118,6 @@ namespace apListaLigada
                 else
                 {
                     alterarSituacao(Situacao.EXCLUINDO);
-                    MessageBox.Show("Clique novamente em EXCLUIR para confirmar ou cancele a operação com CANCELAR");
                 }
             }
         }
