@@ -56,7 +56,7 @@
     <Compile Include="IRegistro.cs" />
     <Compile Include="ListaDupla.cs" />
     <Compile Include="NoDuplo.cs" />
-    <Compile Include="Palavra.cs" />
+    <Compile Include="PalavraEDica.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -70,6 +70,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -83,6 +84,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeProximo%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeCancelar%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeDeletar%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeSair%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeEditar%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeAdicionar%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeAnterior%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeBuscar%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeFim%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeInicio%281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

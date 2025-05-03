@@ -75,3 +75,14 @@ C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\apForca\bin\Debug\apListaL
 C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\apForca\bin\Debug\apListaLigada.exe
 C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\apForca\bin\Debug\apListaLigada.pdb
 C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.FrmDicionario.resources
+D:\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.csproj.AssemblyReference.cache
+D:\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.exe.config
+D:\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.FrmDicionario.resources
+D:\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.Properties.Resources.resources
+D:\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.csproj.GenerateResource.cache
+D:\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.csproj.CoreCompileInputs.cache
+D:\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.exe
+D:\GitHub\24126_24137_Proj1_ED\apForca\obj\Debug\apListaLigada.pdb
+D:\GitHub\24126_24137_Proj1_ED\apForca\bin\Debug\apListaLigada.exe.config
+D:\GitHub\24126_24137_Proj1_ED\apForca\bin\Debug\apListaLigada.exe
+D:\GitHub\24126_24137_Proj1_ED\apForca\bin\Debug\apListaLigada.pdb

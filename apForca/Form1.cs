@@ -161,12 +161,7 @@ namespace apListaLigada
             lsb.Items.Clear();
             var dadosDaLista = aLista.Listagem(qualDirecao);
             foreach (PalavraEDica palavra in dadosDaLista)
-            lsb.Items.Add(palavra.Palavra.PadLeft(30) + " - " + palavra.Dica);
-        }
-
-        private void tabControl1_Enter(object sender, EventArgs e)
-        {
-            rbFrente.PerformClick();
+            lsb.Items.Add(palavra.Palavra.PadRight(30) + " - " + palavra.Dica);
         }
 
         private void rbFrente_Click(object sender, EventArgs e)
@@ -295,6 +290,16 @@ namespace apListaLigada
                 // salva os dados
                 lista1.GravarDados(dlgSalvar.FileName);
             }
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			switch ((sender as TabControl).SelectedIndex)
+			{
+                case 1: // listagem
+                    rbFrente.PerformClick(); // exibe os dados na ordem crescente
+                    break;
+			}
         }
     }
 }
