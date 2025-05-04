@@ -1,4 +1,7 @@
-﻿using Microsoft.SqlServer.Server;
+﻿// Eduardo - 24126
+// Júlio - 24137
+
+using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
 using System.Linq;
