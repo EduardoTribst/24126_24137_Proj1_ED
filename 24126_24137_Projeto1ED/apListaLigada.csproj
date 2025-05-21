@@ -115,5 +115,27 @@
   <ItemGroup>
     <None Include="Resources\iconeInicio%281%29.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Enforcado.gif" />
+    <Content Include="Resources\Forca_05.gif" />
+    <Content Include="Resources\Forca_07.gif" />
+    <Content Include="Resources\Forca_08.gif" />
+    <Content Include="Resources\Forca_09.gif" />
+    <Content Include="Resources\Forca_10.gif" />
+    <Content Include="Resources\Forca_14.gif" />
+    <Content Include="Resources\Forca_16.gif" />
+    <Content Include="Resources\Forca_17.gif" />
+    <Content Include="Resources\Forca_1_05.gif" />
+    <Content Include="Resources\Forca_2_03.gif" />
+    <Content Include="Resources\Forca_2_04.gif" />
+    <Content Include="Resources\Forca_2_07.gif" />
+    <Content Include="Resources\Forca__01.gif" />
+    <Content Include="Resources\Forca__02.gif" />
+    <Content Include="Resources\Forca__03.gif" />
+    <Content Include="Resources\Forca__05.gif" />
+    <Content Include="Resources\Forca__08.gif" />
+    <Content Include="Resources\Forca__09.gif" />
+    <Content Include="Resources\Forca__13.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

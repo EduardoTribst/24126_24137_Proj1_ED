@@ -118,34 +118,82 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="iconeSair(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconeSair(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconeCancelar(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconeCancelar(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca__02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca__02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconeEditar(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconeEditar(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconeProximo(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconeProximo(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Forca__05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca__05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconeFim(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconeFim(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Forca__09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca__09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconeAdicionar(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconeAdicionar(2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Forca_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconeDeletar(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconeDeletar(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Forca__01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca__01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca_16.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca__08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca__08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconeAnterior(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconeAnterior(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconeCancelar(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconeCancelar(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Forca_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconeDeletar(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconeDeletar(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconeBuscar(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconeBuscar(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Forca_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca__03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca__03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconeInicio(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconeInicio(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconeSair(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconeSair(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconeAdicionar(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconeAdicionar(2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca_14.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconeProximo(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconeProximo(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca__13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca__13.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca_1_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca_1_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconeFim(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconeFim(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forca_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forca_17.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

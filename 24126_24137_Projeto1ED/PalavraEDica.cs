@@ -18,6 +18,8 @@ namespace apListaLigada
 
         private string dica;
 
+        private bool[] acertou = new bool[15];
+
         public int TamanhoPalavra
         {
             get { return tamanhoPalavra; }
