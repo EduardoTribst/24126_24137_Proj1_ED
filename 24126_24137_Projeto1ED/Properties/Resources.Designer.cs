@@ -223,6 +223,46 @@ namespace apListaLigada.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Forca_2_03 {
+            get {
+                object obj = ResourceManager.GetObject("Forca_2_03", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Forca_2_04 {
+            get {
+                object obj = ResourceManager.GetObject("Forca_2_04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Forca_2_07 {
+            get {
+                object obj = ResourceManager.GetObject("Forca_2_07", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Forca_2_071 {
+            get {
+                object obj = ResourceManager.GetObject("Forca_2_071", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconeAdicionar_2_ {
             get {
                 object obj = ResourceManager.GetObject("iconeAdicionar(2)", resourceCulture);
