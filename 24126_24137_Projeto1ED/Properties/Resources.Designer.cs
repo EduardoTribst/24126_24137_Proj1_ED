@@ -63,6 +63,16 @@ namespace apListaLigada.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Enforcado {
+            get {
+                object obj = ResourceManager.GetObject("Enforcado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Forca__01 {
             get {
                 object obj = ResourceManager.GetObject("Forca__01", resourceCulture);
