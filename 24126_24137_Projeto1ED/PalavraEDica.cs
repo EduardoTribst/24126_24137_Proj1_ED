@@ -25,7 +25,12 @@ namespace apListaLigada
             get { return tamanhoPalavra; }
         }
 
-        public string Palavra { get; set; }
+        public string Palavra
+        {
+            get { return dica; }
+
+            set { palavra = value.ToUpper()}
+        }
 
         public string Dica { get; set; }
 
@@ -33,7 +38,7 @@ namespace apListaLigada
 
         public PalavraEDica(string palavra, string dica)
         {
-            Palavra = palavra;
+            Palavra = palavra.Trim().ToUpper();
             Dica = dica;
             for (int i = 0; i < palavra.Length; i++)
             {
@@ -43,7 +48,7 @@ namespace apListaLigada
 
         public PalavraEDica(string linha)
         {
-            Palavra = linha.Substring(0, tamanhoPalavra).Trim();
+            Palavra = linha.Substring(0, tamanhoPalavra).Trim().ToUpper();
             Dica = linha.Substring(tamanhoPalavra);
             for (int i = 0; i < palavra.Length; i++)
             {
