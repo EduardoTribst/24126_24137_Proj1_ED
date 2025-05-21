@@ -57,12 +57,18 @@
             this.rbFrente = new System.Windows.Forms.RadioButton();
             this.lsbDados = new System.Windows.Forms.ListBox();
             this.tpForca = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblTempo = new System.Windows.Forms.Label();
+            this.lblErros = new System.Windows.Forms.Label();
+            this.lblPontos = new System.Windows.Forms.Label();
+            this.lblDica = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkDica = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button40 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
@@ -127,14 +133,8 @@
             this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.slSituacao = new System.Windows.Forms.ToolStripStatusLabel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.btnInicia = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCadastro.SuspendLayout();
@@ -435,19 +435,19 @@
             // 
             // tpForca
             // 
+            this.tpForca.Controls.Add(this.btnInicia);
             this.tpForca.Controls.Add(this.label13);
             this.tpForca.Controls.Add(this.label12);
-            this.tpForca.Controls.Add(this.label11);
-            this.tpForca.Controls.Add(this.label10);
-            this.tpForca.Controls.Add(this.label9);
-            this.tpForca.Controls.Add(this.label8);
+            this.tpForca.Controls.Add(this.lblTempo);
+            this.tpForca.Controls.Add(this.lblErros);
+            this.tpForca.Controls.Add(this.lblPontos);
+            this.tpForca.Controls.Add(this.lblDica);
             this.tpForca.Controls.Add(this.label7);
             this.tpForca.Controls.Add(this.label6);
-            this.tpForca.Controls.Add(this.checkBox1);
+            this.tpForca.Controls.Add(this.chkDica);
             this.tpForca.Controls.Add(this.label5);
             this.tpForca.Controls.Add(this.label4);
             this.tpForca.Controls.Add(this.label3);
-            this.tpForca.Controls.Add(this.button40);
             this.tpForca.Controls.Add(this.dataGridView1);
             this.tpForca.Controls.Add(this.button1);
             this.tpForca.Controls.Add(this.button28);
@@ -514,6 +514,72 @@
             this.tpForca.TabIndex = 2;
             this.tpForca.Text = "Forca";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 18.25F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(475, 95);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(242, 30);
+            this.label13.TabIndex = 74;
+            this.label13.Text = "Adivinhe a palavra!";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Curlz MT", 55.25F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label12.Location = new System.Drawing.Point(477, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(240, 98);
+            this.label12.TabIndex = 73;
+            this.label12.Text = "Forca !";
+            // 
+            // lblTempo
+            // 
+            this.lblTempo.AutoSize = true;
+            this.lblTempo.Location = new System.Drawing.Point(606, 391);
+            this.lblTempo.Name = "lblTempo";
+            this.lblTempo.Size = new System.Drawing.Size(24, 17);
+            this.lblTempo.TabIndex = 72;
+            this.lblTempo.Text = "__";
+            // 
+            // lblErros
+            // 
+            this.lblErros.AutoSize = true;
+            this.lblErros.Location = new System.Drawing.Point(462, 391);
+            this.lblErros.Name = "lblErros";
+            this.lblErros.Size = new System.Drawing.Size(24, 17);
+            this.lblErros.TabIndex = 71;
+            this.lblErros.Text = "__";
+            // 
+            // lblPontos
+            // 
+            this.lblPontos.AutoSize = true;
+            this.lblPontos.Location = new System.Drawing.Point(465, 361);
+            this.lblPontos.Name = "lblPontos";
+            this.lblPontos.Size = new System.Drawing.Size(24, 17);
+            this.lblPontos.TabIndex = 70;
+            this.lblPontos.Text = "__";
+            // 
+            // lblDica
+            // 
+            this.lblDica.AutoSize = true;
+            this.lblDica.Location = new System.Drawing.Point(445, 312);
+            this.lblDica.Name = "lblDica";
+            this.lblDica.Size = new System.Drawing.Size(216, 17);
+            this.lblDica.TabIndex = 69;
+            this.lblDica.Text = "__________________________";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(407, 391);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 17);
+            this.label7.TabIndex = 68;
+            this.label7.Text = "Erros: ";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -523,14 +589,14 @@
             this.label6.TabIndex = 67;
             this.label6.Text = "Com dica";
             // 
-            // checkBox1
+            // chkDica
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(626, 364);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 66;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkDica.AutoSize = true;
+            this.chkDica.Location = new System.Drawing.Point(626, 364);
+            this.chkDica.Name = "chkDica";
+            this.chkDica.Size = new System.Drawing.Size(15, 14);
+            this.chkDica.TabIndex = 66;
+            this.chkDica.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -559,15 +625,6 @@
             this.label3.TabIndex = 63;
             this.label3.Text = "Tempo: ";
             // 
-            // button40
-            // 
-            this.button40.Location = new System.Drawing.Point(702, 312);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(75, 23);
-            this.button40.TabIndex = 62;
-            this.button40.Text = "Iniciar";
-            this.button40.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -584,6 +641,7 @@
             this.button1.TabIndex = 59;
             this.button1.Text = "A";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button28
             // 
@@ -593,6 +651,7 @@
             this.button28.TabIndex = 57;
             this.button28.Text = "-";
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button29
             // 
@@ -602,6 +661,7 @@
             this.button29.TabIndex = 56;
             this.button29.Text = "Ú";
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button30
             // 
@@ -611,6 +671,7 @@
             this.button30.TabIndex = 55;
             this.button30.Text = "Õ";
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button31
             // 
@@ -620,6 +681,7 @@
             this.button31.TabIndex = 54;
             this.button31.Text = "Ô";
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button32
             // 
@@ -629,6 +691,7 @@
             this.button32.TabIndex = 53;
             this.button32.Text = "Ó";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button33
             // 
@@ -638,6 +701,7 @@
             this.button33.TabIndex = 52;
             this.button33.Text = "Í";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button34
             // 
@@ -647,6 +711,7 @@
             this.button34.TabIndex = 51;
             this.button34.Text = "Ê";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button35
             // 
@@ -656,6 +721,7 @@
             this.button35.TabIndex = 50;
             this.button35.Text = "É";
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button36
             // 
@@ -665,6 +731,7 @@
             this.button36.TabIndex = 49;
             this.button36.Text = "Ã";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button37
             // 
@@ -674,6 +741,7 @@
             this.button37.TabIndex = 48;
             this.button37.Text = "Â";
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button38
             // 
@@ -683,6 +751,7 @@
             this.button38.TabIndex = 47;
             this.button38.Text = "Á";
             this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button39
             // 
@@ -692,6 +761,7 @@
             this.button39.TabIndex = 46;
             this.button39.Text = "Ç";
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button14
             // 
@@ -701,6 +771,7 @@
             this.button14.TabIndex = 45;
             this.button14.Text = "Z";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button15
             // 
@@ -710,6 +781,7 @@
             this.button15.TabIndex = 44;
             this.button15.Text = "Y";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button16
             // 
@@ -719,6 +791,7 @@
             this.button16.TabIndex = 43;
             this.button16.Text = "X";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button17
             // 
@@ -728,6 +801,7 @@
             this.button17.TabIndex = 42;
             this.button17.Text = "W";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button18
             // 
@@ -737,6 +811,7 @@
             this.button18.TabIndex = 41;
             this.button18.Text = "V";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button19
             // 
@@ -746,6 +821,7 @@
             this.button19.TabIndex = 40;
             this.button19.Text = "U";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button20
             // 
@@ -755,6 +831,7 @@
             this.button20.TabIndex = 39;
             this.button20.Text = "T";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button21
             // 
@@ -764,6 +841,7 @@
             this.button21.TabIndex = 38;
             this.button21.Text = "S";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button22
             // 
@@ -773,6 +851,7 @@
             this.button22.TabIndex = 37;
             this.button22.Text = "R";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button23
             // 
@@ -782,6 +861,7 @@
             this.button23.TabIndex = 36;
             this.button23.Text = "Q";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button24
             // 
@@ -791,6 +871,7 @@
             this.button24.TabIndex = 35;
             this.button24.Text = "P";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button25
             // 
@@ -800,6 +881,7 @@
             this.button25.TabIndex = 34;
             this.button25.Text = "O";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button26
             // 
@@ -809,6 +891,7 @@
             this.button26.TabIndex = 33;
             this.button26.Text = "N";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button13
             // 
@@ -818,6 +901,7 @@
             this.button13.TabIndex = 32;
             this.button13.Text = "M";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button7
             // 
@@ -827,6 +911,7 @@
             this.button7.TabIndex = 31;
             this.button7.Text = "L";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button8
             // 
@@ -836,6 +921,7 @@
             this.button8.TabIndex = 30;
             this.button8.Text = "K";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button9
             // 
@@ -845,6 +931,7 @@
             this.button9.TabIndex = 29;
             this.button9.Text = "J";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button10
             // 
@@ -854,6 +941,7 @@
             this.button10.TabIndex = 28;
             this.button10.Text = "I";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button11
             // 
@@ -863,6 +951,7 @@
             this.button11.TabIndex = 27;
             this.button11.Text = "H";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button12
             // 
@@ -872,6 +961,7 @@
             this.button12.TabIndex = 26;
             this.button12.Text = "G";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button6
             // 
@@ -881,6 +971,7 @@
             this.button6.TabIndex = 25;
             this.button6.Text = "F";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button5
             // 
@@ -890,6 +981,7 @@
             this.button5.TabIndex = 24;
             this.button5.Text = "E";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button4
             // 
@@ -899,6 +991,7 @@
             this.button4.TabIndex = 23;
             this.button4.Text = "D";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button3
             // 
@@ -908,6 +1001,7 @@
             this.button3.TabIndex = 22;
             this.button3.Text = "C";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button2
             // 
@@ -917,6 +1011,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "B";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // pbxFimBandeira
             // 
@@ -1105,11 +1200,12 @@
             // pbxMorto
             // 
             this.pbxMorto.Image = global::apListaLigada.Properties.Resources.Enforcado;
-            this.pbxMorto.Location = new System.Drawing.Point(344, 52);
+            this.pbxMorto.Location = new System.Drawing.Point(327, 2);
             this.pbxMorto.Name = "pbxMorto";
             this.pbxMorto.Size = new System.Drawing.Size(173, 356);
             this.pbxMorto.TabIndex = 61;
             this.pbxMorto.TabStop = false;
+            this.pbxMorto.Visible = false;
             // 
             // statusStrip1
             // 
@@ -1149,75 +1245,20 @@
             this.slSituacao.Size = new System.Drawing.Size(16, 17);
             this.slSituacao.Text = "...";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(407, 391);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 17);
-            this.label7.TabIndex = 68;
-            this.label7.Text = "Erros: ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(445, 312);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(216, 17);
-            this.label8.TabIndex = 69;
-            this.label8.Text = "__________________________";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(465, 361);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(24, 17);
-            this.label9.TabIndex = 70;
-            this.label9.Text = "__";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(462, 391);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(24, 17);
-            this.label10.TabIndex = 71;
-            this.label10.Text = "__";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(606, 391);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 17);
-            this.label11.TabIndex = 72;
-            this.label11.Text = "__";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timerTick);
             // 
-            // label12
+            // btnInicia
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Curlz MT", 55.25F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label12.Location = new System.Drawing.Point(477, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(240, 98);
-            this.label12.TabIndex = 73;
-            this.label12.Text = "Forca !";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 18.25F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(475, 95);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(242, 30);
-            this.label13.TabIndex = 74;
-            this.label13.Text = "Adivinhe a palavra!";
+            this.btnInicia.Location = new System.Drawing.Point(705, 312);
+            this.btnInicia.Name = "btnInicia";
+            this.btnInicia.Size = new System.Drawing.Size(75, 23);
+            this.btnInicia.TabIndex = 75;
+            this.btnInicia.Text = "Iniciar";
+            this.btnInicia.UseVisualStyleBackColor = true;
+            this.btnInicia.Click += new System.EventHandler(this.btnInicia_Click);
             // 
             // FrmDicionario
             // 
@@ -1362,20 +1403,21 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pbxMorto;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkDica;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblPontos;
+        private System.Windows.Forms.Label lblDica;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblTempo;
+        private System.Windows.Forms.Label lblErros;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnInicia;
     }
 }
 

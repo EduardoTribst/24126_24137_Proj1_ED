@@ -13,6 +13,7 @@ namespace apListaLigada
     {
         ListaDupla<PalavraEDica> lista1;
         Situacao situacaoAtual; // variável para armazenar a situação atual
+        int tempo;
 
 		public FrmDicionario()
         {
@@ -302,5 +303,34 @@ namespace apListaLigada
 			}
         }
 
+        private void btnLetra_Click(object sender, EventArgs e)
+        {
+            Button button;
+            if (sender is Button)
+            {
+                button = sender as Button;
+            }
+        }
+
+        private void btnInicia_Click(object sender, EventArgs e)
+        {
+            if (chkDica.Checked)
+            {
+                tempo = 5;
+                timer1.Start();
+
+                
+            }
+        }
+
+        private void timerTick(object sender, EventArgs e)
+        {
+            tempo -= 1;
+            lblTempo.Text = tempo.ToString();
+            if (tempo < 0)
+            {
+                timer1.Stop();
+            }
+        }
     }
 }
