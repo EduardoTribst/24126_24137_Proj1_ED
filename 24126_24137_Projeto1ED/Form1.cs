@@ -327,7 +327,7 @@ namespace apListaLigada
         {
             tempo -= 1;
             lblTempo.Text = tempo.ToString();
-            if (tempo < 0)
+            if (tempo <= 0)
             {
                 timer1.Stop();
             }
