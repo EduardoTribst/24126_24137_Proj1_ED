@@ -29,7 +29,7 @@ namespace apListaLigada
         {
             get { return dica; }
 
-            set { palavra = value.ToUpper()}
+            set { palavra = value.ToUpper(); }
         }
 
         public string Dica { get; set; }

@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
@@ -14,8 +15,9 @@ namespace apListaLigada
         ListaDupla<PalavraEDica> lista1;
         Situacao situacaoAtual; // variável para armazenar a situação atual
         int tempo;
+        Random random = new Random();
 
-		public FrmDicionario()
+        public FrmDicionario()
         {
             InitializeComponent();
         }
@@ -309,18 +311,28 @@ namespace apListaLigada
             if (sender is Button)
             {
                 button = sender as Button;
+                lblPontos.Text = button.Text;
             }
         }
 
         private void btnInicia_Click(object sender, EventArgs e)
         {
+            tabControl1.Enabled = false; // Não deixa usuario sair da tela da forca
+            int quantasPalavrasPassadas = random.Next(lista1.QuantosNos);
+            lista1.PosicionarNoInicio();
+            for (int i = 0; i < quantasPalavrasPassadas; i++)
+            {
+                lista1.Avancar();
+            }
+
             if (chkDica.Checked)
             {
                 tempo = 5;
                 timer1.Start();
-
-                
+                lblDica.Text = lista1.Atual.Info.Dica;
             }
+
+
         }
 
         private void timerTick(object sender, EventArgs e)
@@ -329,6 +341,7 @@ namespace apListaLigada
             lblTempo.Text = tempo.ToString();
             if (tempo <= 0)
             {
+                tabControl1.Enabled = true;
                 timer1.Stop();
             }
         }
