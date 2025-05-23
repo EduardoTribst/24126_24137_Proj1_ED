@@ -57,6 +57,47 @@
             this.rbFrente = new System.Windows.Forms.RadioButton();
             this.lsbDados = new System.Windows.Forms.ListBox();
             this.tpForca = new System.Windows.Forms.TabPage();
+            this.pbxMorto = new System.Windows.Forms.PictureBox();
+            this.pbxMaoDireita = new System.Windows.Forms.PictureBox();
+            this.gbxTeclado = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
             this.btnInicia = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -71,44 +112,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.pbxFimBandeira = new System.Windows.Forms.PictureBox();
             this.pbxCabecaMorto = new System.Windows.Forms.PictureBox();
             this.pbxComecoBandeira = new System.Windows.Forms.PictureBox();
@@ -116,7 +119,6 @@
             this.pbxPernaDireita = new System.Windows.Forms.PictureBox();
             this.pbxPernaEsquerda = new System.Windows.Forms.PictureBox();
             this.pbxBermuda = new System.Windows.Forms.PictureBox();
-            this.pbxMaoDireita = new System.Windows.Forms.PictureBox();
             this.pbxMaoEsquerda = new System.Windows.Forms.PictureBox();
             this.pbxTronco = new System.Windows.Forms.PictureBox();
             this.pbxPescoco = new System.Windows.Forms.PictureBox();
@@ -128,7 +130,6 @@
             this.pbxBaseForca = new System.Windows.Forms.PictureBox();
             this.pbxMeioForca = new System.Windows.Forms.PictureBox();
             this.pbxViradaForca = new System.Windows.Forms.PictureBox();
-            this.pbxMorto = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
@@ -141,6 +142,9 @@
             this.tpListagem.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tpForca.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).BeginInit();
+            this.gbxTeclado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFimBandeira)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCabecaMorto)).BeginInit();
@@ -149,7 +153,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxPernaDireita)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPernaEsquerda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBermuda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaoEsquerda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTronco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPescoco)).BeginInit();
@@ -161,7 +164,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxBaseForca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMeioForca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxViradaForca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -435,6 +437,9 @@
             // 
             // tpForca
             // 
+            this.tpForca.Controls.Add(this.pbxMorto);
+            this.tpForca.Controls.Add(this.pbxMaoDireita);
+            this.tpForca.Controls.Add(this.gbxTeclado);
             this.tpForca.Controls.Add(this.btnInicia);
             this.tpForca.Controls.Add(this.label13);
             this.tpForca.Controls.Add(this.label12);
@@ -449,44 +454,6 @@
             this.tpForca.Controls.Add(this.label4);
             this.tpForca.Controls.Add(this.label3);
             this.tpForca.Controls.Add(this.dataGridView1);
-            this.tpForca.Controls.Add(this.button1);
-            this.tpForca.Controls.Add(this.button28);
-            this.tpForca.Controls.Add(this.button29);
-            this.tpForca.Controls.Add(this.button30);
-            this.tpForca.Controls.Add(this.button31);
-            this.tpForca.Controls.Add(this.button32);
-            this.tpForca.Controls.Add(this.button33);
-            this.tpForca.Controls.Add(this.button34);
-            this.tpForca.Controls.Add(this.button35);
-            this.tpForca.Controls.Add(this.button36);
-            this.tpForca.Controls.Add(this.button37);
-            this.tpForca.Controls.Add(this.button38);
-            this.tpForca.Controls.Add(this.button39);
-            this.tpForca.Controls.Add(this.button14);
-            this.tpForca.Controls.Add(this.button15);
-            this.tpForca.Controls.Add(this.button16);
-            this.tpForca.Controls.Add(this.button17);
-            this.tpForca.Controls.Add(this.button18);
-            this.tpForca.Controls.Add(this.button19);
-            this.tpForca.Controls.Add(this.button20);
-            this.tpForca.Controls.Add(this.button21);
-            this.tpForca.Controls.Add(this.button22);
-            this.tpForca.Controls.Add(this.button23);
-            this.tpForca.Controls.Add(this.button24);
-            this.tpForca.Controls.Add(this.button25);
-            this.tpForca.Controls.Add(this.button26);
-            this.tpForca.Controls.Add(this.button13);
-            this.tpForca.Controls.Add(this.button7);
-            this.tpForca.Controls.Add(this.button8);
-            this.tpForca.Controls.Add(this.button9);
-            this.tpForca.Controls.Add(this.button10);
-            this.tpForca.Controls.Add(this.button11);
-            this.tpForca.Controls.Add(this.button12);
-            this.tpForca.Controls.Add(this.button6);
-            this.tpForca.Controls.Add(this.button5);
-            this.tpForca.Controls.Add(this.button4);
-            this.tpForca.Controls.Add(this.button3);
-            this.tpForca.Controls.Add(this.button2);
             this.tpForca.Controls.Add(this.pbxFimBandeira);
             this.tpForca.Controls.Add(this.pbxCabecaMorto);
             this.tpForca.Controls.Add(this.pbxComecoBandeira);
@@ -494,7 +461,6 @@
             this.tpForca.Controls.Add(this.pbxPernaDireita);
             this.tpForca.Controls.Add(this.pbxPernaEsquerda);
             this.tpForca.Controls.Add(this.pbxBermuda);
-            this.tpForca.Controls.Add(this.pbxMaoDireita);
             this.tpForca.Controls.Add(this.pbxMaoEsquerda);
             this.tpForca.Controls.Add(this.pbxTronco);
             this.tpForca.Controls.Add(this.pbxPescoco);
@@ -506,13 +472,496 @@
             this.tpForca.Controls.Add(this.pbxBaseForca);
             this.tpForca.Controls.Add(this.pbxMeioForca);
             this.tpForca.Controls.Add(this.pbxViradaForca);
-            this.tpForca.Controls.Add(this.pbxMorto);
             this.tpForca.Location = new System.Drawing.Point(4, 26);
             this.tpForca.Name = "tpForca";
             this.tpForca.Padding = new System.Windows.Forms.Padding(3);
             this.tpForca.Size = new System.Drawing.Size(875, 525);
             this.tpForca.TabIndex = 2;
             this.tpForca.Text = "Forca";
+            // 
+            // pbxMorto
+            // 
+            this.pbxMorto.Image = global::apListaLigada.Properties.Resources.Enforcado;
+            this.pbxMorto.Location = new System.Drawing.Point(285, -2);
+            this.pbxMorto.Name = "pbxMorto";
+            this.pbxMorto.Size = new System.Drawing.Size(173, 356);
+            this.pbxMorto.TabIndex = 61;
+            this.pbxMorto.TabStop = false;
+            this.pbxMorto.Visible = false;
+            // 
+            // pbxMaoDireita
+            // 
+            this.pbxMaoDireita.Image = global::apListaLigada.Properties.Resources.Forca_10;
+            this.pbxMaoDireita.Location = new System.Drawing.Point(221, 235);
+            this.pbxMaoDireita.Name = "pbxMaoDireita";
+            this.pbxMaoDireita.Size = new System.Drawing.Size(100, 59);
+            this.pbxMaoDireita.TabIndex = 13;
+            this.pbxMaoDireita.TabStop = false;
+            this.pbxMaoDireita.Visible = false;
+            // 
+            // gbxTeclado
+            // 
+            this.gbxTeclado.Controls.Add(this.button1);
+            this.gbxTeclado.Controls.Add(this.button2);
+            this.gbxTeclado.Controls.Add(this.button3);
+            this.gbxTeclado.Controls.Add(this.button4);
+            this.gbxTeclado.Controls.Add(this.button5);
+            this.gbxTeclado.Controls.Add(this.button6);
+            this.gbxTeclado.Controls.Add(this.button12);
+            this.gbxTeclado.Controls.Add(this.button11);
+            this.gbxTeclado.Controls.Add(this.button10);
+            this.gbxTeclado.Controls.Add(this.button9);
+            this.gbxTeclado.Controls.Add(this.button8);
+            this.gbxTeclado.Controls.Add(this.button7);
+            this.gbxTeclado.Controls.Add(this.button13);
+            this.gbxTeclado.Controls.Add(this.button26);
+            this.gbxTeclado.Controls.Add(this.button25);
+            this.gbxTeclado.Controls.Add(this.button24);
+            this.gbxTeclado.Controls.Add(this.button28);
+            this.gbxTeclado.Controls.Add(this.button23);
+            this.gbxTeclado.Controls.Add(this.button29);
+            this.gbxTeclado.Controls.Add(this.button22);
+            this.gbxTeclado.Controls.Add(this.button30);
+            this.gbxTeclado.Controls.Add(this.button21);
+            this.gbxTeclado.Controls.Add(this.button31);
+            this.gbxTeclado.Controls.Add(this.button20);
+            this.gbxTeclado.Controls.Add(this.button32);
+            this.gbxTeclado.Controls.Add(this.button19);
+            this.gbxTeclado.Controls.Add(this.button33);
+            this.gbxTeclado.Controls.Add(this.button18);
+            this.gbxTeclado.Controls.Add(this.button34);
+            this.gbxTeclado.Controls.Add(this.button17);
+            this.gbxTeclado.Controls.Add(this.button35);
+            this.gbxTeclado.Controls.Add(this.button16);
+            this.gbxTeclado.Controls.Add(this.button36);
+            this.gbxTeclado.Controls.Add(this.button15);
+            this.gbxTeclado.Controls.Add(this.button37);
+            this.gbxTeclado.Controls.Add(this.button14);
+            this.gbxTeclado.Controls.Add(this.button38);
+            this.gbxTeclado.Controls.Add(this.button39);
+            this.gbxTeclado.Location = new System.Drawing.Point(400, 196);
+            this.gbxTeclado.Name = "gbxTeclado";
+            this.gbxTeclado.Size = new System.Drawing.Size(380, 110);
+            this.gbxTeclado.TabIndex = 76;
+            this.gbxTeclado.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(6, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 23);
+            this.button1.TabIndex = 59;
+            this.button1.Text = "A";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(35, 23);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(23, 23);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "B";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button3
+            // 
+            this.button3.Enabled = false;
+            this.button3.Location = new System.Drawing.Point(64, 23);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(23, 23);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "C";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button4
+            // 
+            this.button4.Enabled = false;
+            this.button4.Location = new System.Drawing.Point(93, 23);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(23, 23);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "D";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button5
+            // 
+            this.button5.Enabled = false;
+            this.button5.Location = new System.Drawing.Point(122, 23);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(23, 23);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "E";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button6
+            // 
+            this.button6.Enabled = false;
+            this.button6.Location = new System.Drawing.Point(151, 23);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(23, 23);
+            this.button6.TabIndex = 25;
+            this.button6.Text = "F";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button12
+            // 
+            this.button12.Enabled = false;
+            this.button12.Location = new System.Drawing.Point(179, 23);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(23, 23);
+            this.button12.TabIndex = 26;
+            this.button12.Text = "G";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button11
+            // 
+            this.button11.Enabled = false;
+            this.button11.Location = new System.Drawing.Point(208, 23);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(23, 23);
+            this.button11.TabIndex = 27;
+            this.button11.Text = "H";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button10
+            // 
+            this.button10.Enabled = false;
+            this.button10.Location = new System.Drawing.Point(237, 23);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(23, 23);
+            this.button10.TabIndex = 28;
+            this.button10.Text = "I";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button9
+            // 
+            this.button9.Enabled = false;
+            this.button9.Location = new System.Drawing.Point(266, 23);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(23, 23);
+            this.button9.TabIndex = 29;
+            this.button9.Text = "J";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button8
+            // 
+            this.button8.Enabled = false;
+            this.button8.Location = new System.Drawing.Point(295, 23);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(23, 23);
+            this.button8.TabIndex = 30;
+            this.button8.Text = "K";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button7
+            // 
+            this.button7.Enabled = false;
+            this.button7.Location = new System.Drawing.Point(324, 23);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(23, 23);
+            this.button7.TabIndex = 31;
+            this.button7.Text = "L";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button13
+            // 
+            this.button13.Enabled = false;
+            this.button13.Location = new System.Drawing.Point(353, 23);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(23, 23);
+            this.button13.TabIndex = 32;
+            this.button13.Text = "M";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button26
+            // 
+            this.button26.Enabled = false;
+            this.button26.Location = new System.Drawing.Point(6, 52);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(23, 23);
+            this.button26.TabIndex = 33;
+            this.button26.Text = "N";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button25
+            // 
+            this.button25.Enabled = false;
+            this.button25.Location = new System.Drawing.Point(35, 52);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(23, 23);
+            this.button25.TabIndex = 34;
+            this.button25.Text = "O";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button24
+            // 
+            this.button24.Enabled = false;
+            this.button24.Location = new System.Drawing.Point(64, 52);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(23, 23);
+            this.button24.TabIndex = 35;
+            this.button24.Text = "P";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button28
+            // 
+            this.button28.Enabled = false;
+            this.button28.Location = new System.Drawing.Point(339, 81);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(23, 23);
+            this.button28.TabIndex = 57;
+            this.button28.Text = "-";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button23
+            // 
+            this.button23.Enabled = false;
+            this.button23.Location = new System.Drawing.Point(93, 52);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(23, 23);
+            this.button23.TabIndex = 36;
+            this.button23.Text = "Q";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button29
+            // 
+            this.button29.Enabled = false;
+            this.button29.Location = new System.Drawing.Point(310, 81);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(23, 23);
+            this.button29.TabIndex = 56;
+            this.button29.Text = "Ú";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button22
+            // 
+            this.button22.Enabled = false;
+            this.button22.Location = new System.Drawing.Point(122, 52);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(23, 23);
+            this.button22.TabIndex = 37;
+            this.button22.Text = "R";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button30
+            // 
+            this.button30.Enabled = false;
+            this.button30.Location = new System.Drawing.Point(281, 81);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(23, 23);
+            this.button30.TabIndex = 55;
+            this.button30.Text = "Õ";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button21
+            // 
+            this.button21.Enabled = false;
+            this.button21.Location = new System.Drawing.Point(151, 52);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(23, 23);
+            this.button21.TabIndex = 38;
+            this.button21.Text = "S";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button31
+            // 
+            this.button31.Enabled = false;
+            this.button31.Location = new System.Drawing.Point(252, 81);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(23, 23);
+            this.button31.TabIndex = 54;
+            this.button31.Text = "Ô";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button20
+            // 
+            this.button20.Enabled = false;
+            this.button20.Location = new System.Drawing.Point(179, 52);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(23, 23);
+            this.button20.TabIndex = 39;
+            this.button20.Text = "T";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button32
+            // 
+            this.button32.Enabled = false;
+            this.button32.Location = new System.Drawing.Point(223, 81);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(23, 23);
+            this.button32.TabIndex = 53;
+            this.button32.Text = "Ó";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button19
+            // 
+            this.button19.Enabled = false;
+            this.button19.Location = new System.Drawing.Point(208, 52);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(23, 23);
+            this.button19.TabIndex = 40;
+            this.button19.Text = "U";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button33
+            // 
+            this.button33.Enabled = false;
+            this.button33.Location = new System.Drawing.Point(194, 81);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(23, 23);
+            this.button33.TabIndex = 52;
+            this.button33.Text = "Í";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button18
+            // 
+            this.button18.Enabled = false;
+            this.button18.Location = new System.Drawing.Point(237, 52);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(23, 23);
+            this.button18.TabIndex = 41;
+            this.button18.Text = "V";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button34
+            // 
+            this.button34.Enabled = false;
+            this.button34.Location = new System.Drawing.Point(166, 81);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(23, 23);
+            this.button34.TabIndex = 51;
+            this.button34.Text = "Ê";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button17
+            // 
+            this.button17.Enabled = false;
+            this.button17.Location = new System.Drawing.Point(266, 52);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(23, 23);
+            this.button17.TabIndex = 42;
+            this.button17.Text = "W";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button35
+            // 
+            this.button35.Enabled = false;
+            this.button35.Location = new System.Drawing.Point(137, 81);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(23, 23);
+            this.button35.TabIndex = 50;
+            this.button35.Text = "É";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button16
+            // 
+            this.button16.Enabled = false;
+            this.button16.Location = new System.Drawing.Point(295, 52);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(23, 23);
+            this.button16.TabIndex = 43;
+            this.button16.Text = "X";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button36
+            // 
+            this.button36.Enabled = false;
+            this.button36.Location = new System.Drawing.Point(108, 81);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(23, 23);
+            this.button36.TabIndex = 49;
+            this.button36.Text = "Ã";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button15
+            // 
+            this.button15.Enabled = false;
+            this.button15.Location = new System.Drawing.Point(324, 52);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(23, 23);
+            this.button15.TabIndex = 44;
+            this.button15.Text = "Y";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button37
+            // 
+            this.button37.Enabled = false;
+            this.button37.Location = new System.Drawing.Point(79, 81);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(23, 23);
+            this.button37.TabIndex = 48;
+            this.button37.Text = "Â";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button14
+            // 
+            this.button14.Enabled = false;
+            this.button14.Location = new System.Drawing.Point(353, 52);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(23, 23);
+            this.button14.TabIndex = 45;
+            this.button14.Text = "Z";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button38
+            // 
+            this.button38.Enabled = false;
+            this.button38.Location = new System.Drawing.Point(50, 81);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(23, 23);
+            this.button38.TabIndex = 47;
+            this.button38.Text = "Á";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.btnLetra_Click);
+            // 
+            // button39
+            // 
+            this.button39.Enabled = false;
+            this.button39.Location = new System.Drawing.Point(21, 81);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(23, 23);
+            this.button39.TabIndex = 46;
+            this.button39.Text = "Ç";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // btnInicia
             // 
@@ -530,9 +979,9 @@
             this.label13.Font = new System.Drawing.Font("Arial", 18.25F, System.Drawing.FontStyle.Bold);
             this.label13.Location = new System.Drawing.Point(475, 95);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(242, 30);
+            this.label13.Size = new System.Drawing.Size(177, 30);
             this.label13.TabIndex = 74;
-            this.label13.Text = "Adivinhe a palavra!";
+            this.label13.Text = "Clique Iniciar!";
             // 
             // label12
             // 
@@ -638,428 +1087,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(410, 157);
+            this.dataGridView1.Location = new System.Drawing.Point(400, 157);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(370, 33);
+            this.dataGridView1.Size = new System.Drawing.Size(380, 33);
             this.dataGridView1.TabIndex = 60;
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(407, 212);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 23);
-            this.button1.TabIndex = 59;
-            this.button1.Text = "A";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button28
-            // 
-            this.button28.Enabled = false;
-            this.button28.Location = new System.Drawing.Point(740, 270);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(23, 23);
-            this.button28.TabIndex = 57;
-            this.button28.Text = "-";
-            this.button28.UseVisualStyleBackColor = true;
-            this.button28.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button29
-            // 
-            this.button29.Enabled = false;
-            this.button29.Location = new System.Drawing.Point(711, 270);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(23, 23);
-            this.button29.TabIndex = 56;
-            this.button29.Text = "Ú";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button30
-            // 
-            this.button30.Enabled = false;
-            this.button30.Location = new System.Drawing.Point(682, 270);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(23, 23);
-            this.button30.TabIndex = 55;
-            this.button30.Text = "Õ";
-            this.button30.UseVisualStyleBackColor = true;
-            this.button30.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button31
-            // 
-            this.button31.Enabled = false;
-            this.button31.Location = new System.Drawing.Point(653, 270);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(23, 23);
-            this.button31.TabIndex = 54;
-            this.button31.Text = "Ô";
-            this.button31.UseVisualStyleBackColor = true;
-            this.button31.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button32
-            // 
-            this.button32.Enabled = false;
-            this.button32.Location = new System.Drawing.Point(624, 270);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(23, 23);
-            this.button32.TabIndex = 53;
-            this.button32.Text = "Ó";
-            this.button32.UseVisualStyleBackColor = true;
-            this.button32.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button33
-            // 
-            this.button33.Enabled = false;
-            this.button33.Location = new System.Drawing.Point(595, 270);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(23, 23);
-            this.button33.TabIndex = 52;
-            this.button33.Text = "Í";
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button34
-            // 
-            this.button34.Enabled = false;
-            this.button34.Location = new System.Drawing.Point(567, 270);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(23, 23);
-            this.button34.TabIndex = 51;
-            this.button34.Text = "Ê";
-            this.button34.UseVisualStyleBackColor = true;
-            this.button34.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button35
-            // 
-            this.button35.Enabled = false;
-            this.button35.Location = new System.Drawing.Point(538, 270);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(23, 23);
-            this.button35.TabIndex = 50;
-            this.button35.Text = "É";
-            this.button35.UseVisualStyleBackColor = true;
-            this.button35.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button36
-            // 
-            this.button36.Enabled = false;
-            this.button36.Location = new System.Drawing.Point(509, 270);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(23, 23);
-            this.button36.TabIndex = 49;
-            this.button36.Text = "Ã";
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button37
-            // 
-            this.button37.Enabled = false;
-            this.button37.Location = new System.Drawing.Point(480, 270);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(23, 23);
-            this.button37.TabIndex = 48;
-            this.button37.Text = "Â";
-            this.button37.UseVisualStyleBackColor = true;
-            this.button37.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button38
-            // 
-            this.button38.Enabled = false;
-            this.button38.Location = new System.Drawing.Point(451, 270);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(23, 23);
-            this.button38.TabIndex = 47;
-            this.button38.Text = "Á";
-            this.button38.UseVisualStyleBackColor = true;
-            this.button38.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button39
-            // 
-            this.button39.Enabled = false;
-            this.button39.Location = new System.Drawing.Point(422, 270);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(23, 23);
-            this.button39.TabIndex = 46;
-            this.button39.Text = "Ç";
-            this.button39.UseVisualStyleBackColor = true;
-            this.button39.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button14
-            // 
-            this.button14.Enabled = false;
-            this.button14.Location = new System.Drawing.Point(754, 241);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(23, 23);
-            this.button14.TabIndex = 45;
-            this.button14.Text = "Z";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button15
-            // 
-            this.button15.Enabled = false;
-            this.button15.Location = new System.Drawing.Point(725, 241);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(23, 23);
-            this.button15.TabIndex = 44;
-            this.button15.Text = "Y";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button16
-            // 
-            this.button16.Enabled = false;
-            this.button16.Location = new System.Drawing.Point(696, 241);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(23, 23);
-            this.button16.TabIndex = 43;
-            this.button16.Text = "X";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button17
-            // 
-            this.button17.Enabled = false;
-            this.button17.Location = new System.Drawing.Point(667, 241);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(23, 23);
-            this.button17.TabIndex = 42;
-            this.button17.Text = "W";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button18
-            // 
-            this.button18.Enabled = false;
-            this.button18.Location = new System.Drawing.Point(638, 241);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(23, 23);
-            this.button18.TabIndex = 41;
-            this.button18.Text = "V";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button19
-            // 
-            this.button19.Enabled = false;
-            this.button19.Location = new System.Drawing.Point(609, 241);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(23, 23);
-            this.button19.TabIndex = 40;
-            this.button19.Text = "U";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button20
-            // 
-            this.button20.Enabled = false;
-            this.button20.Location = new System.Drawing.Point(580, 241);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(23, 23);
-            this.button20.TabIndex = 39;
-            this.button20.Text = "T";
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button21
-            // 
-            this.button21.Enabled = false;
-            this.button21.Location = new System.Drawing.Point(552, 241);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(23, 23);
-            this.button21.TabIndex = 38;
-            this.button21.Text = "S";
-            this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button22
-            // 
-            this.button22.Enabled = false;
-            this.button22.Location = new System.Drawing.Point(523, 241);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(23, 23);
-            this.button22.TabIndex = 37;
-            this.button22.Text = "R";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button23
-            // 
-            this.button23.Enabled = false;
-            this.button23.Location = new System.Drawing.Point(494, 241);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(23, 23);
-            this.button23.TabIndex = 36;
-            this.button23.Text = "Q";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button24
-            // 
-            this.button24.Enabled = false;
-            this.button24.Location = new System.Drawing.Point(465, 241);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(23, 23);
-            this.button24.TabIndex = 35;
-            this.button24.Text = "P";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button25
-            // 
-            this.button25.Enabled = false;
-            this.button25.Location = new System.Drawing.Point(436, 241);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(23, 23);
-            this.button25.TabIndex = 34;
-            this.button25.Text = "O";
-            this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button26
-            // 
-            this.button26.Enabled = false;
-            this.button26.Location = new System.Drawing.Point(407, 241);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(23, 23);
-            this.button26.TabIndex = 33;
-            this.button26.Text = "N";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button13
-            // 
-            this.button13.Enabled = false;
-            this.button13.Location = new System.Drawing.Point(754, 212);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(23, 23);
-            this.button13.TabIndex = 32;
-            this.button13.Text = "M";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button7
-            // 
-            this.button7.Enabled = false;
-            this.button7.Location = new System.Drawing.Point(725, 212);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(23, 23);
-            this.button7.TabIndex = 31;
-            this.button7.Text = "L";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button8
-            // 
-            this.button8.Enabled = false;
-            this.button8.Location = new System.Drawing.Point(696, 212);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(23, 23);
-            this.button8.TabIndex = 30;
-            this.button8.Text = "K";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button9
-            // 
-            this.button9.Enabled = false;
-            this.button9.Location = new System.Drawing.Point(667, 212);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(23, 23);
-            this.button9.TabIndex = 29;
-            this.button9.Text = "J";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button10
-            // 
-            this.button10.Enabled = false;
-            this.button10.Location = new System.Drawing.Point(638, 212);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(23, 23);
-            this.button10.TabIndex = 28;
-            this.button10.Text = "I";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button11
-            // 
-            this.button11.Enabled = false;
-            this.button11.Location = new System.Drawing.Point(609, 212);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(23, 23);
-            this.button11.TabIndex = 27;
-            this.button11.Text = "H";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button12
-            // 
-            this.button12.Enabled = false;
-            this.button12.Location = new System.Drawing.Point(580, 212);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(23, 23);
-            this.button12.TabIndex = 26;
-            this.button12.Text = "G";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button6
-            // 
-            this.button6.Enabled = false;
-            this.button6.Location = new System.Drawing.Point(552, 212);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(23, 23);
-            this.button6.TabIndex = 25;
-            this.button6.Text = "F";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button5
-            // 
-            this.button5.Enabled = false;
-            this.button5.Location = new System.Drawing.Point(523, 212);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(23, 23);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "E";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button4
-            // 
-            this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(494, 212);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(23, 23);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "D";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button3
-            // 
-            this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(465, 212);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(23, 23);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "C";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnLetra_Click);
-            // 
-            // button2
-            // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(436, 212);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(23, 23);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "B";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // pbxFimBandeira
             // 
@@ -1084,7 +1115,7 @@
             // pbxComecoBandeira
             // 
             this.pbxComecoBandeira.Image = global::apListaLigada.Properties.Resources.Forca_2_04;
-            this.pbxComecoBandeira.Location = new System.Drawing.Point(104, 130);
+            this.pbxComecoBandeira.Location = new System.Drawing.Point(103, 128);
             this.pbxComecoBandeira.Name = "pbxComecoBandeira";
             this.pbxComecoBandeira.Size = new System.Drawing.Size(108, 93);
             this.pbxComecoBandeira.TabIndex = 18;
@@ -1094,7 +1125,7 @@
             // pbxMaoEsquerdaBandeira
             // 
             this.pbxMaoEsquerdaBandeira.Image = global::apListaLigada.Properties.Resources.Forca_2_07;
-            this.pbxMaoEsquerdaBandeira.Location = new System.Drawing.Point(104, 220);
+            this.pbxMaoEsquerdaBandeira.Location = new System.Drawing.Point(103, 218);
             this.pbxMaoEsquerdaBandeira.Name = "pbxMaoEsquerdaBandeira";
             this.pbxMaoEsquerdaBandeira.Size = new System.Drawing.Size(59, 50);
             this.pbxMaoEsquerdaBandeira.TabIndex = 17;
@@ -1104,7 +1135,7 @@
             // pbxPernaDireita
             // 
             this.pbxPernaDireita.Image = global::apListaLigada.Properties.Resources.Forca_17;
-            this.pbxPernaDireita.Location = new System.Drawing.Point(188, 361);
+            this.pbxPernaDireita.Location = new System.Drawing.Point(191, 360);
             this.pbxPernaDireita.Name = "pbxPernaDireita";
             this.pbxPernaDireita.Size = new System.Drawing.Size(100, 93);
             this.pbxPernaDireita.TabIndex = 16;
@@ -1114,7 +1145,7 @@
             // pbxPernaEsquerda
             // 
             this.pbxPernaEsquerda.Image = global::apListaLigada.Properties.Resources.Forca_16;
-            this.pbxPernaEsquerda.Location = new System.Drawing.Point(123, 369);
+            this.pbxPernaEsquerda.Location = new System.Drawing.Point(124, 363);
             this.pbxPernaEsquerda.Name = "pbxPernaEsquerda";
             this.pbxPernaEsquerda.Size = new System.Drawing.Size(100, 82);
             this.pbxPernaEsquerda.TabIndex = 15;
@@ -1124,27 +1155,17 @@
             // pbxBermuda
             // 
             this.pbxBermuda.Image = global::apListaLigada.Properties.Resources.Forca_14;
-            this.pbxBermuda.Location = new System.Drawing.Point(158, 318);
+            this.pbxBermuda.Location = new System.Drawing.Point(158, 312);
             this.pbxBermuda.Name = "pbxBermuda";
             this.pbxBermuda.Size = new System.Drawing.Size(100, 52);
             this.pbxBermuda.TabIndex = 14;
             this.pbxBermuda.TabStop = false;
             this.pbxBermuda.Visible = false;
             // 
-            // pbxMaoDireita
-            // 
-            this.pbxMaoDireita.Image = global::apListaLigada.Properties.Resources.Forca_10;
-            this.pbxMaoDireita.Location = new System.Drawing.Point(221, 235);
-            this.pbxMaoDireita.Name = "pbxMaoDireita";
-            this.pbxMaoDireita.Size = new System.Drawing.Size(100, 59);
-            this.pbxMaoDireita.TabIndex = 13;
-            this.pbxMaoDireita.TabStop = false;
-            this.pbxMaoDireita.Visible = false;
-            // 
             // pbxMaoEsquerda
             // 
             this.pbxMaoEsquerda.Image = global::apListaLigada.Properties.Resources.Forca_07;
-            this.pbxMaoEsquerda.Location = new System.Drawing.Point(104, 220);
+            this.pbxMaoEsquerda.Location = new System.Drawing.Point(104, 218);
             this.pbxMaoEsquerda.Name = "pbxMaoEsquerda";
             this.pbxMaoEsquerda.Size = new System.Drawing.Size(58, 50);
             this.pbxMaoEsquerda.TabIndex = 12;
@@ -1245,16 +1266,6 @@
             this.pbxViradaForca.TabIndex = 0;
             this.pbxViradaForca.TabStop = false;
             // 
-            // pbxMorto
-            // 
-            this.pbxMorto.Image = global::apListaLigada.Properties.Resources.Enforcado;
-            this.pbxMorto.Location = new System.Drawing.Point(344, 0);
-            this.pbxMorto.Name = "pbxMorto";
-            this.pbxMorto.Size = new System.Drawing.Size(173, 356);
-            this.pbxMorto.TabIndex = 61;
-            this.pbxMorto.TabStop = false;
-            this.pbxMorto.Visible = false;
-            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -1320,6 +1331,9 @@
             this.groupBox1.PerformLayout();
             this.tpForca.ResumeLayout(false);
             this.tpForca.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).EndInit();
+            this.gbxTeclado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFimBandeira)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCabecaMorto)).EndInit();
@@ -1328,7 +1342,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxPernaDireita)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPernaEsquerda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBermuda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaoEsquerda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTronco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPescoco)).EndInit();
@@ -1340,7 +1353,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxBaseForca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMeioForca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxViradaForca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -1456,6 +1468,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnInicia;
+        private System.Windows.Forms.GroupBox gbxTeclado;
     }
 }
 

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace apListaLigada
 {
@@ -16,6 +17,9 @@ namespace apListaLigada
         Situacao situacaoAtual; // variável para armazenar a situação atual
         int tempo;
         Random random = new Random();
+        bool bloquearTabControl;
+        int erros = 0;
+        int pontos = 0;
 
         public FrmDicionario()
         {
@@ -312,12 +316,70 @@ namespace apListaLigada
             {
                 button = sender as Button;
                 lblPontos.Text = button.Text;
+                if (!lista1.Atual.Info.TemNaPalavra('Z'))
+                {
+                    erros++;
+                    if (pontos > 0)
+                    {
+                        pontos--;
+                    }
+                        
+                    lblErros.Text = pontos.ToString();
+                    lblPontos.Text = pontos.ToString();
+                    DesenharCorpo();
+                    
+                }
             }
+        }
+
+        private void Perdeu()
+        {
+            timer1.Stop();
+            pbxMorto.Visible = true;
+            pbxCabecaVivo.Visible = false;
+            pbxCabecaMorto.Visible = true;
+            label13.Text = "Clique em iniciar para jogar!";
+            foreach (Control ctrl in gbxTeclado.Controls)
+            {
+                if (ctrl is Button)
+                {
+                    ctrl.Enabled = false;
+                }
+            }
+        }
+        private void DesenharCorpo()
+        {
+            PictureBox[] partes = { pbxCabecaVivo, pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda};
+            partes[erros-1].Visible = true;
+            if (erros == 8)
+            {
+                Perdeu();
+            }
+        }
+
+        private void LimparPersonagem()
+        {
+            PictureBox[] partes = { pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda, pbxCabecaMorto, pbxMorto };
+            for (int i = 0; i < partes.Length; i++)
+            {
+                partes[i].Visible = false;
+            }
+            
         }
 
         private void btnInicia_Click(object sender, EventArgs e)
         {
-            tabControl1.Enabled = false; // Não deixa usuario sair da tela da forca
+            LimparPersonagem();
+            foreach (Control ctrl in gbxTeclado.Controls)
+            {
+                if (ctrl is Button)
+                {
+                    ctrl.Enabled = true;
+                }
+            }
+            label13.Text = "Adivinhe a palavra!";
+            erros = 0;
+            pontos = 0;
             int quantasPalavrasPassadas = random.Next(lista1.QuantosNos);
             lista1.PosicionarNoInicio();
             for (int i = 0; i < quantasPalavrasPassadas; i++)
@@ -341,9 +403,9 @@ namespace apListaLigada
             lblTempo.Text = tempo.ToString();
             if (tempo <= 0)
             {
-                tabControl1.Enabled = true;
-                timer1.Stop();
+                Perdeu();
             }
         }
+
     }
 }
