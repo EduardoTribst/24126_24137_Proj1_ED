@@ -497,5 +497,15 @@ namespace apListaLigada
                 }
             }
         }
+
+        private void AtualizarHorario(object sender, EventArgs e)
+        {
+            horario.Text = DateTime.Now.ToString().Substring(10, 9);
+        }
+
+        private void dtpSelecionarData_ValueChanged(object sender, EventArgs e)
+        {
+            dataSelecionada.Text = dtpSelecionarData.Value.ToString().Substring(0, 10);
+        }
     }
 }
