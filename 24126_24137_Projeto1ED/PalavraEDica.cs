@@ -27,7 +27,7 @@ namespace apListaLigada
 
         public string Dica { get; set; }
 
-        public string Acertou { get; }
+        public bool[] Acertou { get => acertou; }
         public string Palavra { get => palavra; set => palavra = value; }
 
         public PalavraEDica(string palavra, string dica)

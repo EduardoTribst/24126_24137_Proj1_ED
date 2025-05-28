@@ -111,7 +111,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPalavraForca = new System.Windows.Forms.DataGridView();
             this.pbxFimBandeira = new System.Windows.Forms.PictureBox();
             this.pbxCabecaMorto = new System.Windows.Forms.PictureBox();
             this.pbxComecoBandeira = new System.Windows.Forms.PictureBox();
@@ -145,7 +145,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).BeginInit();
             this.gbxTeclado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPalavraForca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFimBandeira)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCabecaMorto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxComecoBandeira)).BeginInit();
@@ -453,7 +453,7 @@
             this.tpForca.Controls.Add(this.label5);
             this.tpForca.Controls.Add(this.label4);
             this.tpForca.Controls.Add(this.label3);
-            this.tpForca.Controls.Add(this.dataGridView1);
+            this.tpForca.Controls.Add(this.dgvPalavraForca);
             this.tpForca.Controls.Add(this.pbxFimBandeira);
             this.tpForca.Controls.Add(this.pbxCabecaMorto);
             this.tpForca.Controls.Add(this.pbxComecoBandeira);
@@ -1084,13 +1084,14 @@
             this.label3.TabIndex = 63;
             this.label3.Text = "Tempo: ";
             // 
-            // dataGridView1
+            // dgvPalavraForca
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(400, 157);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(380, 33);
-            this.dataGridView1.TabIndex = 60;
+            this.dgvPalavraForca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPalavraForca.Location = new System.Drawing.Point(400, 157);
+            this.dgvPalavraForca.Name = "dgvPalavraForca";
+            this.dgvPalavraForca.ReadOnly = true;
+            this.dgvPalavraForca.Size = new System.Drawing.Size(380, 33);
+            this.dgvPalavraForca.TabIndex = 60;
             // 
             // pbxFimBandeira
             // 
@@ -1334,7 +1335,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).EndInit();
             this.gbxTeclado.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPalavraForca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFimBandeira)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCabecaMorto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxComecoBandeira)).EndInit();
@@ -1452,7 +1453,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pbxMorto;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPalavraForca;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox chkDica;

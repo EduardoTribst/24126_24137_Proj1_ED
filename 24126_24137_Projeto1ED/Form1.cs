@@ -24,6 +24,7 @@ namespace apListaLigada
         public FrmDicionario()
         {
             InitializeComponent();
+            tabControl1.Selecting += tabControl1_Selecting;
         }
 
         // enum de situacao
@@ -299,14 +300,23 @@ namespace apListaLigada
             }
         }
 
+
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-			switch ((sender as TabControl).SelectedIndex)
-			{
+            switch ((sender as TabControl).SelectedIndex)
+            {
                 case 1: // listagem
                     rbFrente.PerformClick(); // exibe os dados na ordem crescente
                     break;
-			}
+            }
+        }
+
+        private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (bloquearTabControl)
+            {
+                e.Cancel = true;
+            }
         }
 
         private void btnLetra_Click(object sender, EventArgs e)
@@ -315,8 +325,8 @@ namespace apListaLigada
             if (sender is Button)
             {
                 button = sender as Button;
-                lblPontos.Text = button.Text;
-                if (!lista1.Atual.Info.TemNaPalavra('Z'))
+                char caracter = button.Text.ToCharArray()[0];
+                if (!lista1.Atual.Info.TemNaPalavra(caracter))
                 {
                     erros++;
                     if (pontos > 0)
@@ -329,6 +339,33 @@ namespace apListaLigada
                     DesenharCorpo();
                     
                 }
+                else
+                {
+                    pontos++;
+
+                    lblPontos.Text = pontos.ToString();
+
+                    // verificar se ganhou
+                    bool achouTodasAsLetras = true;
+                    for (int i = 0; i < lista1.Atual.Info.Palavra.Length; i++)
+                    {
+                        if (lista1.Atual.Info.Acertou[i])
+                        {
+                            dgvPalavraForca.Rows[0].Cells[i].Value = lista1.Atual.Info.Palavra[i];
+                        }
+                        else
+                        {
+                            achouTodasAsLetras = false;
+                        }
+                    }
+                    
+                    if (achouTodasAsLetras)
+                    {
+                        // ganhou!!!!
+                    }
+                }
+
+                button.Enabled = false;
             }
         }
 
@@ -369,6 +406,8 @@ namespace apListaLigada
 
         private void btnInicia_Click(object sender, EventArgs e)
         {
+            bloquearTabControl = true;
+
             LimparPersonagem();
             foreach (Control ctrl in gbxTeclado.Controls)
             {
@@ -386,10 +425,25 @@ namespace apListaLigada
             {
                 lista1.Avancar();
             }
+            String palavraSelecionada = lista1.Atual.Info.Palavra;
+            char[] letrasPalavra = palavraSelecionada.ToCharArray();
+
+            dgvPalavraForca.Rows.Clear();
+            dgvPalavraForca.Columns.Clear();
+            dgvPalavraForca.ColumnHeadersVisible = false;
+            dgvPalavraForca.RowHeadersVisible = false;
+
+            for (int i = 0; i < letrasPalavra.Length; i++)
+            {
+                dgvPalavraForca.Columns.Add(i.ToString(), i.ToString());
+                dgvPalavraForca.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+
+            dgvPalavraForca.Rows[0].Height = 33;
 
             if (chkDica.Checked)
             {
-                tempo = 5;
+                tempo = 30;
                 timer1.Start();
                 lblDica.Text = lista1.Atual.Info.Dica;
             }
