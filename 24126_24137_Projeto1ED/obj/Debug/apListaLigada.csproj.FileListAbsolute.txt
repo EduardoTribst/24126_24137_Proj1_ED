@@ -96,3 +96,13 @@ C:\Users\u24126\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj
 C:\Users\u24126\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.csproj.CoreCompileInputs.cache
 C:\Users\u24126\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.exe
 C:\Users\u24126\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.pdb
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\bin\Debug\apListaLigada.exe.config
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\bin\Debug\apListaLigada.exe
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\bin\Debug\apListaLigada.pdb
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.csproj.AssemblyReference.cache
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.FrmDicionario.resources
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.Properties.Resources.resources
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.csproj.GenerateResource.cache
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.csproj.CoreCompileInputs.cache
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.exe
+C:\Users\u24137\Documents\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.pdb

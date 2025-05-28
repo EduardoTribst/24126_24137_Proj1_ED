@@ -25,16 +25,10 @@ namespace apListaLigada
             get { return tamanhoPalavra; }
         }
 
-        public string Palavra
-        {
-            get { return dica; }
-
-            set { palavra = value.ToUpper(); }
-        }
-
         public string Dica { get; set; }
 
         public string Acertou { get; }
+        public string Palavra { get => palavra; set => palavra = value; }
 
         public PalavraEDica(string palavra, string dica)
         {
@@ -50,7 +44,7 @@ namespace apListaLigada
         {
             Palavra = linha.Substring(0, tamanhoPalavra).Trim().ToUpper();
             Dica = linha.Substring(tamanhoPalavra);
-            for (int i = 0; i < palavra.Length; i++)
+            for (int i = 0; i < Palavra.Length; i++)
             {
                 acertou[i] = false;
             }
@@ -70,9 +64,9 @@ namespace apListaLigada
 	    {
 	        bool tem = false;
 
-	        for (int i = 0; i < palavra.Length ; i++) 
+	        for (int i = 0; i < Palavra.Length ; i++) 
 	        {
-		        if (palavra[i] == letra) 
+		        if (Palavra[i] == letra) 
 		        {
 		            tem = true;
 		            acertou[i] = true;
