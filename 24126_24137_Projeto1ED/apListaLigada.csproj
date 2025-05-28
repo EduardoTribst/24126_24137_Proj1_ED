@@ -116,6 +116,9 @@
     <None Include="Resources\iconeInicio%281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bonecoFelizSemFundo%281%29.png" />
+    <Content Include="Resources\bonecoFelizSemFundo.png" />
+    <None Include="Resources\bonecoFelizSemFundo1.png" />
     <Content Include="Resources\Enforcado.gif" />
     <Content Include="Resources\Forca_05.gif" />
     <Content Include="Resources\Forca_07.gif" />

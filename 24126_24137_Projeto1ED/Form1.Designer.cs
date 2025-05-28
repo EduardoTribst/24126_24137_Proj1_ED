@@ -35,19 +35,9 @@
             this.dlgAbrir = new System.Windows.Forms.OpenFileDialog();
             this.dlgSalvar = new System.Windows.Forms.SaveFileDialog();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnInicio = new System.Windows.Forms.ToolStripButton();
-            this.btnAnterior = new System.Windows.Forms.ToolStripButton();
-            this.btnProximo = new System.Windows.Forms.ToolStripButton();
-            this.btnFim = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnNovo = new System.Windows.Forms.ToolStripButton();
-            this.btnEditar = new System.Windows.Forms.ToolStripButton();
-            this.btnCancelar = new System.Windows.Forms.ToolStripButton();
-            this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnSair = new System.Windows.Forms.ToolStripButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpCadastro = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,8 +47,6 @@
             this.rbFrente = new System.Windows.Forms.RadioButton();
             this.lsbDados = new System.Windows.Forms.ListBox();
             this.tpForca = new System.Windows.Forms.TabPage();
-            this.pbxMorto = new System.Windows.Forms.PictureBox();
-            this.pbxMaoDireita = new System.Windows.Forms.PictureBox();
             this.gbxTeclado = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -112,6 +100,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvPalavraForca = new System.Windows.Forms.DataGridView();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.slSituacao = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pbxPersonagemFeliz = new System.Windows.Forms.PictureBox();
+            this.pbxMorto = new System.Windows.Forms.PictureBox();
+            this.pbxMaoDireita = new System.Windows.Forms.PictureBox();
             this.pbxFimBandeira = new System.Windows.Forms.PictureBox();
             this.pbxCabecaMorto = new System.Windows.Forms.PictureBox();
             this.pbxComecoBandeira = new System.Windows.Forms.PictureBox();
@@ -130,22 +127,29 @@
             this.pbxBaseForca = new System.Windows.Forms.PictureBox();
             this.pbxMeioForca = new System.Windows.Forms.PictureBox();
             this.pbxViradaForca = new System.Windows.Forms.PictureBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.slSituacao = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnInicio = new System.Windows.Forms.ToolStripButton();
+            this.btnAnterior = new System.Windows.Forms.ToolStripButton();
+            this.btnProximo = new System.Windows.Forms.ToolStripButton();
+            this.btnFim = new System.Windows.Forms.ToolStripButton();
+            this.btnBuscar = new System.Windows.Forms.ToolStripButton();
+            this.btnNovo = new System.Windows.Forms.ToolStripButton();
+            this.btnEditar = new System.Windows.Forms.ToolStripButton();
+            this.btnCancelar = new System.Windows.Forms.ToolStripButton();
+            this.btnExcluir = new System.Windows.Forms.ToolStripButton();
+            this.btnSair = new System.Windows.Forms.ToolStripButton();
+            this.button27 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCadastro.SuspendLayout();
             this.tpListagem.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tpForca.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).BeginInit();
             this.gbxTeclado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalavraForca)).BeginInit();
+            this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPersonagemFeliz)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFimBandeira)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCabecaMorto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxComecoBandeira)).BeginInit();
@@ -164,7 +168,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxBaseForca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMeioForca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxViradaForca)).BeginInit();
-            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -224,121 +227,20 @@
             this.toolStrip1.TabIndex = 21;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // btnInicio
-            // 
-            this.btnInicio.Image = global::apListaLigada.Properties.Resources.iconeInicio_1_;
-            this.btnInicio.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(40, 43);
-            this.btnInicio.Text = "Início";
-            this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
-            // 
-            // btnAnterior
-            // 
-            this.btnAnterior.Image = global::apListaLigada.Properties.Resources.iconeAnterior_1_;
-            this.btnAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(54, 43);
-            this.btnAnterior.Text = "Anterior";
-            this.btnAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
-            // 
-            // btnProximo
-            // 
-            this.btnProximo.Image = global::apListaLigada.Properties.Resources.iconeProximo_1_;
-            this.btnProximo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(56, 43);
-            this.btnProximo.Text = "Próximo";
-            this.btnProximo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
-            // 
-            // btnFim
-            // 
-            this.btnFim.Image = global::apListaLigada.Properties.Resources.iconeFim_1_;
-            this.btnFim.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnFim.Name = "btnFim";
-            this.btnFim.Size = new System.Drawing.Size(36, 43);
-            this.btnFim.Text = "Final";
-            this.btnFim.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnFim.Click += new System.EventHandler(this.btnFim_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 46);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Image = global::apListaLigada.Properties.Resources.iconeBuscar_1_;
-            this.btnBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(46, 43);
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 46);
             // 
-            // btnNovo
-            // 
-            this.btnNovo.Image = global::apListaLigada.Properties.Resources.iconeAdicionar_2_;
-            this.btnNovo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(40, 43);
-            this.btnNovo.Text = "Novo";
-            this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnNovo.Click += new System.EventHandler(this.btnIncluir_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Image = global::apListaLigada.Properties.Resources.iconeEditar_1_;
-            this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(46, 43);
-            this.btnEditar.Text = "Alterar";
-            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Image = global::apListaLigada.Properties.Resources.iconeCancelar_1_;
-            this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(57, 43);
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Image = global::apListaLigada.Properties.Resources.iconeDeletar_1_;
-            this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(46, 43);
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 46);
-            // 
-            // btnSair
-            // 
-            this.btnSair.Image = global::apListaLigada.Properties.Resources.iconeSair_1_;
-            this.btnSair.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(30, 43);
-            this.btnSair.Text = "Sair";
-            this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // tabControl1
             // 
@@ -437,7 +339,7 @@
             // 
             // tpForca
             // 
-            this.tpForca.Controls.Add(this.pbxMorto);
+            this.tpForca.Controls.Add(this.pbxPersonagemFeliz);
             this.tpForca.Controls.Add(this.pbxMaoDireita);
             this.tpForca.Controls.Add(this.gbxTeclado);
             this.tpForca.Controls.Add(this.btnInicia);
@@ -472,6 +374,7 @@
             this.tpForca.Controls.Add(this.pbxBaseForca);
             this.tpForca.Controls.Add(this.pbxMeioForca);
             this.tpForca.Controls.Add(this.pbxViradaForca);
+            this.tpForca.Controls.Add(this.pbxMorto);
             this.tpForca.Location = new System.Drawing.Point(4, 26);
             this.tpForca.Name = "tpForca";
             this.tpForca.Padding = new System.Windows.Forms.Padding(3);
@@ -479,28 +382,9 @@
             this.tpForca.TabIndex = 2;
             this.tpForca.Text = "Forca";
             // 
-            // pbxMorto
-            // 
-            this.pbxMorto.Image = global::apListaLigada.Properties.Resources.Enforcado;
-            this.pbxMorto.Location = new System.Drawing.Point(285, -2);
-            this.pbxMorto.Name = "pbxMorto";
-            this.pbxMorto.Size = new System.Drawing.Size(173, 356);
-            this.pbxMorto.TabIndex = 61;
-            this.pbxMorto.TabStop = false;
-            this.pbxMorto.Visible = false;
-            // 
-            // pbxMaoDireita
-            // 
-            this.pbxMaoDireita.Image = global::apListaLigada.Properties.Resources.Forca_10;
-            this.pbxMaoDireita.Location = new System.Drawing.Point(221, 235);
-            this.pbxMaoDireita.Name = "pbxMaoDireita";
-            this.pbxMaoDireita.Size = new System.Drawing.Size(100, 59);
-            this.pbxMaoDireita.TabIndex = 13;
-            this.pbxMaoDireita.TabStop = false;
-            this.pbxMaoDireita.Visible = false;
-            // 
             // gbxTeclado
             // 
+            this.gbxTeclado.Controls.Add(this.button27);
             this.gbxTeclado.Controls.Add(this.button1);
             this.gbxTeclado.Controls.Add(this.button2);
             this.gbxTeclado.Controls.Add(this.button3);
@@ -724,7 +608,7 @@
             // button28
             // 
             this.button28.Enabled = false;
-            this.button28.Location = new System.Drawing.Point(339, 81);
+            this.button28.Location = new System.Drawing.Point(324, 81);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(23, 23);
             this.button28.TabIndex = 57;
@@ -746,7 +630,7 @@
             // button29
             // 
             this.button29.Enabled = false;
-            this.button29.Location = new System.Drawing.Point(310, 81);
+            this.button29.Location = new System.Drawing.Point(295, 81);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(23, 23);
             this.button29.TabIndex = 56;
@@ -768,7 +652,7 @@
             // button30
             // 
             this.button30.Enabled = false;
-            this.button30.Location = new System.Drawing.Point(281, 81);
+            this.button30.Location = new System.Drawing.Point(266, 81);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(23, 23);
             this.button30.TabIndex = 55;
@@ -790,7 +674,7 @@
             // button31
             // 
             this.button31.Enabled = false;
-            this.button31.Location = new System.Drawing.Point(252, 81);
+            this.button31.Location = new System.Drawing.Point(237, 81);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(23, 23);
             this.button31.TabIndex = 54;
@@ -812,7 +696,7 @@
             // button32
             // 
             this.button32.Enabled = false;
-            this.button32.Location = new System.Drawing.Point(223, 81);
+            this.button32.Location = new System.Drawing.Point(208, 81);
             this.button32.Name = "button32";
             this.button32.Size = new System.Drawing.Size(23, 23);
             this.button32.TabIndex = 53;
@@ -834,7 +718,7 @@
             // button33
             // 
             this.button33.Enabled = false;
-            this.button33.Location = new System.Drawing.Point(194, 81);
+            this.button33.Location = new System.Drawing.Point(179, 81);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(23, 23);
             this.button33.TabIndex = 52;
@@ -856,7 +740,7 @@
             // button34
             // 
             this.button34.Enabled = false;
-            this.button34.Location = new System.Drawing.Point(166, 81);
+            this.button34.Location = new System.Drawing.Point(151, 81);
             this.button34.Name = "button34";
             this.button34.Size = new System.Drawing.Size(23, 23);
             this.button34.TabIndex = 51;
@@ -878,7 +762,7 @@
             // button35
             // 
             this.button35.Enabled = false;
-            this.button35.Location = new System.Drawing.Point(137, 81);
+            this.button35.Location = new System.Drawing.Point(122, 81);
             this.button35.Name = "button35";
             this.button35.Size = new System.Drawing.Size(23, 23);
             this.button35.TabIndex = 50;
@@ -900,7 +784,7 @@
             // button36
             // 
             this.button36.Enabled = false;
-            this.button36.Location = new System.Drawing.Point(108, 81);
+            this.button36.Location = new System.Drawing.Point(93, 81);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(23, 23);
             this.button36.TabIndex = 49;
@@ -922,7 +806,7 @@
             // button37
             // 
             this.button37.Enabled = false;
-            this.button37.Location = new System.Drawing.Point(79, 81);
+            this.button37.Location = new System.Drawing.Point(64, 81);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(23, 23);
             this.button37.TabIndex = 48;
@@ -944,7 +828,7 @@
             // button38
             // 
             this.button38.Enabled = false;
-            this.button38.Location = new System.Drawing.Point(50, 81);
+            this.button38.Location = new System.Drawing.Point(35, 81);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(23, 23);
             this.button38.TabIndex = 47;
@@ -955,7 +839,7 @@
             // button39
             // 
             this.button39.Enabled = false;
-            this.button39.Location = new System.Drawing.Point(21, 81);
+            this.button39.Location = new System.Drawing.Point(6, 81);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(23, 23);
             this.button39.TabIndex = 46;
@@ -1093,6 +977,79 @@
             this.dgvPalavraForca.Size = new System.Drawing.Size(380, 33);
             this.dgvPalavraForca.TabIndex = 60;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.slRegistro,
+            this.toolStripStatusLabel2,
+            this.slSituacao});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 616);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(900, 22);
+            this.statusStrip1.TabIndex = 23;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(69, 17);
+            this.toolStripStatusLabel1.Text = "Mensagem:";
+            // 
+            // slRegistro
+            // 
+            this.slRegistro.Name = "slRegistro";
+            this.slRegistro.Size = new System.Drawing.Size(70, 17);
+            this.slRegistro.Text = "Registro:0/0";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(55, 17);
+            this.toolStripStatusLabel2.Text = "Situação:";
+            // 
+            // slSituacao
+            // 
+            this.slSituacao.Name = "slSituacao";
+            this.slSituacao.Size = new System.Drawing.Size(16, 17);
+            this.slSituacao.Text = "...";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timerTick);
+            // 
+            // pbxPersonagemFeliz
+            // 
+            this.pbxPersonagemFeliz.Image = global::apListaLigada.Properties.Resources.bonecoFelizSemFundo_1_;
+            this.pbxPersonagemFeliz.Location = new System.Drawing.Point(59, 129);
+            this.pbxPersonagemFeliz.Name = "pbxPersonagemFeliz";
+            this.pbxPersonagemFeliz.Size = new System.Drawing.Size(220, 302);
+            this.pbxPersonagemFeliz.TabIndex = 77;
+            this.pbxPersonagemFeliz.TabStop = false;
+            this.pbxPersonagemFeliz.Visible = false;
+            // 
+            // pbxMorto
+            // 
+            this.pbxMorto.Image = global::apListaLigada.Properties.Resources.Enforcado;
+            this.pbxMorto.Location = new System.Drawing.Point(285, -2);
+            this.pbxMorto.Name = "pbxMorto";
+            this.pbxMorto.Size = new System.Drawing.Size(173, 356);
+            this.pbxMorto.TabIndex = 61;
+            this.pbxMorto.TabStop = false;
+            this.pbxMorto.Visible = false;
+            // 
+            // pbxMaoDireita
+            // 
+            this.pbxMaoDireita.Image = global::apListaLigada.Properties.Resources.Forca_10;
+            this.pbxMaoDireita.Location = new System.Drawing.Point(221, 235);
+            this.pbxMaoDireita.Name = "pbxMaoDireita";
+            this.pbxMaoDireita.Size = new System.Drawing.Size(100, 59);
+            this.pbxMaoDireita.TabIndex = 13;
+            this.pbxMaoDireita.TabStop = false;
+            this.pbxMaoDireita.Visible = false;
+            // 
             // pbxFimBandeira
             // 
             this.pbxFimBandeira.Image = global::apListaLigada.Properties.Resources.Forca_2_03;
@@ -1146,7 +1103,7 @@
             // pbxPernaEsquerda
             // 
             this.pbxPernaEsquerda.Image = global::apListaLigada.Properties.Resources.Forca_16;
-            this.pbxPernaEsquerda.Location = new System.Drawing.Point(124, 363);
+            this.pbxPernaEsquerda.Location = new System.Drawing.Point(124, 362);
             this.pbxPernaEsquerda.Name = "pbxPernaEsquerda";
             this.pbxPernaEsquerda.Size = new System.Drawing.Size(100, 82);
             this.pbxPernaEsquerda.TabIndex = 15;
@@ -1267,48 +1224,116 @@
             this.pbxViradaForca.TabIndex = 0;
             this.pbxViradaForca.TabStop = false;
             // 
-            // statusStrip1
+            // btnInicio
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.slRegistro,
-            this.toolStripStatusLabel2,
-            this.slSituacao});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 616);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(900, 22);
-            this.statusStrip1.TabIndex = 23;
-            this.statusStrip1.Text = "statusStrip1";
+            this.btnInicio.Image = global::apListaLigada.Properties.Resources.iconeInicio_1_;
+            this.btnInicio.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(40, 43);
+            this.btnInicio.Text = "Início";
+            this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // toolStripStatusLabel1
+            // btnAnterior
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(69, 17);
-            this.toolStripStatusLabel1.Text = "Mensagem:";
+            this.btnAnterior.Image = global::apListaLigada.Properties.Resources.iconeAnterior_1_;
+            this.btnAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(54, 43);
+            this.btnAnterior.Text = "Anterior";
+            this.btnAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
-            // slRegistro
+            // btnProximo
             // 
-            this.slRegistro.Name = "slRegistro";
-            this.slRegistro.Size = new System.Drawing.Size(70, 17);
-            this.slRegistro.Text = "Registro:0/0";
+            this.btnProximo.Image = global::apListaLigada.Properties.Resources.iconeProximo_1_;
+            this.btnProximo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnProximo.Name = "btnProximo";
+            this.btnProximo.Size = new System.Drawing.Size(56, 43);
+            this.btnProximo.Text = "Próximo";
+            this.btnProximo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
             // 
-            // toolStripStatusLabel2
+            // btnFim
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(55, 17);
-            this.toolStripStatusLabel2.Text = "Situação:";
+            this.btnFim.Image = global::apListaLigada.Properties.Resources.iconeFim_1_;
+            this.btnFim.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnFim.Name = "btnFim";
+            this.btnFim.Size = new System.Drawing.Size(36, 43);
+            this.btnFim.Text = "Final";
+            this.btnFim.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnFim.Click += new System.EventHandler(this.btnFim_Click);
             // 
-            // slSituacao
+            // btnBuscar
             // 
-            this.slSituacao.Name = "slSituacao";
-            this.slSituacao.Size = new System.Drawing.Size(16, 17);
-            this.slSituacao.Text = "...";
+            this.btnBuscar.Image = global::apListaLigada.Properties.Resources.iconeBuscar_1_;
+            this.btnBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(46, 43);
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // timer1
+            // btnNovo
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timerTick);
+            this.btnNovo.Image = global::apListaLigada.Properties.Resources.iconeAdicionar_2_;
+            this.btnNovo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(40, 43);
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnNovo.Click += new System.EventHandler(this.btnIncluir_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Image = global::apListaLigada.Properties.Resources.iconeEditar_1_;
+            this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(46, 43);
+            this.btnEditar.Text = "Alterar";
+            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Image = global::apListaLigada.Properties.Resources.iconeCancelar_1_;
+            this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(57, 43);
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Image = global::apListaLigada.Properties.Resources.iconeDeletar_1_;
+            this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(46, 43);
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnSair
+            // 
+            this.btnSair.Image = global::apListaLigada.Properties.Resources.iconeSair_1_;
+            this.btnSair.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(30, 43);
+            this.btnSair.Text = "Sair";
+            this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // button27
+            // 
+            this.button27.Enabled = false;
+            this.button27.Location = new System.Drawing.Point(353, 81);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(23, 23);
+            this.button27.TabIndex = 60;
+            this.button27.Text = " ";
+            this.button27.UseVisualStyleBackColor = true;
             // 
             // FrmDicionario
             // 
@@ -1332,10 +1357,13 @@
             this.groupBox1.PerformLayout();
             this.tpForca.ResumeLayout(false);
             this.tpForca.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).EndInit();
             this.gbxTeclado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPalavraForca)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPersonagemFeliz)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFimBandeira)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCabecaMorto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxComecoBandeira)).EndInit();
@@ -1354,8 +1382,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxBaseForca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMeioForca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxViradaForca)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1470,6 +1496,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnInicia;
         private System.Windows.Forms.GroupBox gbxTeclado;
+        private System.Windows.Forms.PictureBox pbxPersonagemFeliz;
+        private System.Windows.Forms.Button button27;
     }
 }
 

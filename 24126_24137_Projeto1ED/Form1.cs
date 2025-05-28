@@ -334,7 +334,7 @@ namespace apListaLigada
                         pontos--;
                     }
                         
-                    lblErros.Text = pontos.ToString();
+                    lblErros.Text = erros.ToString();
                     lblPontos.Text = pontos.ToString();
                     DesenharCorpo();
                     
@@ -361,7 +361,8 @@ namespace apListaLigada
                     
                     if (achouTodasAsLetras)
                     {
-                        // ganhou!!!!
+                        // venceu!!!
+                        Venceu();
                     }
                 }
 
@@ -371,10 +372,25 @@ namespace apListaLigada
 
         private void Perdeu()
         {
-            timer1.Stop();
             pbxMorto.Visible = true;
             pbxCabecaVivo.Visible = false;
             pbxCabecaMorto.Visible = true;
+            TerminarJogo();
+        }
+
+        private void Venceu()
+        {
+            LimparPersonagem();
+            pbxPersonagemFeliz.Visible = true;
+            VisibilidadeForca(false);
+            MessageBox.Show("Você venceu!!!!");
+            TerminarJogo();
+        }
+
+        private void TerminarJogo()
+        {
+            bloquearTabControl = false;
+
             label13.Text = "Clique em iniciar para jogar!";
             foreach (Control ctrl in gbxTeclado.Controls)
             {
@@ -383,11 +399,25 @@ namespace apListaLigada
                     ctrl.Enabled = false;
                 }
             }
+
+            timer1.Stop();
+
+            btnInicia.Enabled = true;
         }
+
+        private void VisibilidadeForca(bool visivel)
+        {
+            PictureBox[] forca = { pbxBaseForca, pbxMeioForca, pbxViradaForca, pbxFimForca, pbxBaseCorda, pbxMeioCorda, pbxCimaCorda };
+            foreach (PictureBox imagem in forca)
+            {
+                imagem.Visible = visivel;
+            }
+        }
+
         private void DesenharCorpo()
         {
-            PictureBox[] partes = { pbxCabecaVivo, pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda};
-            partes[erros-1].Visible = true;
+            PictureBox[] partes = { pbxCabecaVivo, pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda };
+            partes[erros - 1].Visible = true;
             if (erros == 8)
             {
                 Perdeu();
@@ -396,19 +426,22 @@ namespace apListaLigada
 
         private void LimparPersonagem()
         {
-            PictureBox[] partes = { pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda, pbxCabecaMorto, pbxMorto };
+            PictureBox[] partes = { pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda, pbxCabecaMorto, pbxMorto, pbxPersonagemFeliz };
             for (int i = 0; i < partes.Length; i++)
             {
                 partes[i].Visible = false;
             }
-            
+
         }
 
         private void btnInicia_Click(object sender, EventArgs e)
         {
             bloquearTabControl = true;
+            btnInicia.Enabled = false;
 
             LimparPersonagem();
+            VisibilidadeForca(true);
+
             foreach (Control ctrl in gbxTeclado.Controls)
             {
                 if (ctrl is Button)
@@ -457,9 +490,12 @@ namespace apListaLigada
             lblTempo.Text = tempo.ToString();
             if (tempo <= 0)
             {
-                Perdeu();
+                while (erros < 8)
+                {
+                    erros++;
+                    DesenharCorpo();
+                }
             }
         }
-
     }
 }

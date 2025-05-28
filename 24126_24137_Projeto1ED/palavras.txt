@@ -1,6 +1,8 @@
-apostas                       acho que eh ilegal
-cachorro                      melhor amigo do homem
-gato                          miau miau
-jundiai                       cidade que talvez nao exista
-sumare                        cidade que nao existe mesmo
-zebra                         listrado
+APOSTAS                       acho que eh ilegal
+CACHORRO                      melhor amigo do homem
+GATO                          miau miau
+GURT                          yo
+JUNDIAI                       cidade que talvez nao exista
+SUMARE                        cidade que nao existe mesmo
+SYBAU                         Me: yo gurt    ;    Evil Gurt: _____
+ZEBRA                         listrado

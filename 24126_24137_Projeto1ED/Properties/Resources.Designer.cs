@@ -63,6 +63,26 @@ namespace apListaLigada.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bonecoFelizSemFundo {
+            get {
+                object obj = ResourceManager.GetObject("bonecoFelizSemFundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bonecoFelizSemFundo_1_ {
+            get {
+                object obj = ResourceManager.GetObject("bonecoFelizSemFundo(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Enforcado {
             get {
                 object obj = ResourceManager.GetObject("Enforcado", resourceCulture);
