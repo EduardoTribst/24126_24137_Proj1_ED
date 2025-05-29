@@ -21,6 +21,7 @@ namespace apListaLigada
         int erros = 0;
         int pontos = 0;
 
+
         public FrmDicionario()
         {
             InitializeComponent();
@@ -389,6 +390,7 @@ namespace apListaLigada
 
         private void TerminarJogo()
         {
+            lista1.Atual.Info.AcabouOJogo();
             bloquearTabControl = false;
 
             label13.Text = "Clique em iniciar para jogar!";
@@ -426,7 +428,7 @@ namespace apListaLigada
 
         private void LimparPersonagem()
         {
-            PictureBox[] partes = { pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda, pbxCabecaMorto, pbxMorto, pbxPersonagemFeliz };
+            PictureBox[] partes = { pbxCabecaVivo, pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda, pbxCabecaMorto, pbxMorto, pbxPersonagemFeliz };
             for (int i = 0; i < partes.Length; i++)
             {
                 partes[i].Visible = false;
@@ -452,6 +454,8 @@ namespace apListaLigada
             label13.Text = "Adivinhe a palavra!";
             erros = 0;
             pontos = 0;
+            lblErros.Text = erros.ToString();
+            lblPontos.Text = pontos.ToString();
             int quantasPalavrasPassadas = random.Next(lista1.QuantosNos);
             lista1.PosicionarNoInicio();
             for (int i = 0; i < quantasPalavrasPassadas; i++)

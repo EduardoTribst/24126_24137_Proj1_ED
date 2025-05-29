@@ -137,12 +137,12 @@
             this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.slSituacao = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.horario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timerHorario = new System.Windows.Forms.Timer(this.components);
-            this.dtpSelecionarData = new System.Windows.Forms.DateTimePicker();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataSelecionada = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerHorario = new System.Windows.Forms.Timer(this.components);
+            this.dtpSelecionarData = new System.Windows.Forms.DateTimePicker();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCadastro.SuspendLayout();
@@ -257,7 +257,7 @@
             this.btnProximo.Image = global::apListaLigada.Properties.Resources.iconeProximo_1_;
             this.btnProximo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(56, 43);
+            this.btnProximo.Size = new System.Drawing.Size(55, 43);
             this.btnProximo.Text = "Próximo";
             this.btnProximo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
@@ -328,7 +328,7 @@
             this.btnExcluir.Image = global::apListaLigada.Properties.Resources.iconeDeletar_1_;
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(46, 43);
+            this.btnExcluir.Size = new System.Drawing.Size(45, 43);
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -445,6 +445,7 @@
             // 
             // tpForca
             // 
+            this.tpForca.Controls.Add(this.pbxMorto);
             this.tpForca.Controls.Add(this.pbxPersonagemFeliz);
             this.tpForca.Controls.Add(this.pbxMaoDireita);
             this.tpForca.Controls.Add(this.gbxTeclado);
@@ -480,7 +481,6 @@
             this.tpForca.Controls.Add(this.pbxBaseForca);
             this.tpForca.Controls.Add(this.pbxMeioForca);
             this.tpForca.Controls.Add(this.pbxViradaForca);
-            this.tpForca.Controls.Add(this.pbxMorto);
             this.tpForca.Location = new System.Drawing.Point(4, 26);
             this.tpForca.Name = "tpForca";
             this.tpForca.Padding = new System.Windows.Forms.Padding(3);
@@ -549,7 +549,7 @@
             this.gbxTeclado.Controls.Add(this.button14);
             this.gbxTeclado.Controls.Add(this.button38);
             this.gbxTeclado.Controls.Add(this.button39);
-            this.gbxTeclado.Location = new System.Drawing.Point(400, 196);
+            this.gbxTeclado.Location = new System.Drawing.Point(472, 201);
             this.gbxTeclado.Name = "gbxTeclado";
             this.gbxTeclado.Size = new System.Drawing.Size(380, 110);
             this.gbxTeclado.TabIndex = 76;
@@ -564,6 +564,7 @@
             this.button27.TabIndex = 60;
             this.button27.Text = " ";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // button1
             // 
@@ -985,7 +986,7 @@
             // 
             // btnInicia
             // 
-            this.btnInicia.Location = new System.Drawing.Point(705, 312);
+            this.btnInicia.Location = new System.Drawing.Point(777, 317);
             this.btnInicia.Name = "btnInicia";
             this.btnInicia.Size = new System.Drawing.Size(75, 23);
             this.btnInicia.TabIndex = 75;
@@ -997,7 +998,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 18.25F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(475, 95);
+            this.label13.Location = new System.Drawing.Point(486, 83);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(177, 30);
             this.label13.TabIndex = 74;
@@ -1008,7 +1009,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Curlz MT", 55.25F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label12.Location = new System.Drawing.Point(477, 0);
+            this.label12.Location = new System.Drawing.Point(463, 3);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(240, 98);
             this.label12.TabIndex = 73;
@@ -1017,7 +1018,7 @@
             // lblTempo
             // 
             this.lblTempo.AutoSize = true;
-            this.lblTempo.Location = new System.Drawing.Point(606, 391);
+            this.lblTempo.Location = new System.Drawing.Point(678, 396);
             this.lblTempo.Name = "lblTempo";
             this.lblTempo.Size = new System.Drawing.Size(24, 17);
             this.lblTempo.TabIndex = 72;
@@ -1026,7 +1027,7 @@
             // lblErros
             // 
             this.lblErros.AutoSize = true;
-            this.lblErros.Location = new System.Drawing.Point(462, 391);
+            this.lblErros.Location = new System.Drawing.Point(534, 396);
             this.lblErros.Name = "lblErros";
             this.lblErros.Size = new System.Drawing.Size(24, 17);
             this.lblErros.TabIndex = 71;
@@ -1035,7 +1036,7 @@
             // lblPontos
             // 
             this.lblPontos.AutoSize = true;
-            this.lblPontos.Location = new System.Drawing.Point(465, 361);
+            this.lblPontos.Location = new System.Drawing.Point(537, 366);
             this.lblPontos.Name = "lblPontos";
             this.lblPontos.Size = new System.Drawing.Size(24, 17);
             this.lblPontos.TabIndex = 70;
@@ -1044,7 +1045,7 @@
             // lblDica
             // 
             this.lblDica.AutoSize = true;
-            this.lblDica.Location = new System.Drawing.Point(445, 312);
+            this.lblDica.Location = new System.Drawing.Point(517, 317);
             this.lblDica.Name = "lblDica";
             this.lblDica.Size = new System.Drawing.Size(216, 17);
             this.lblDica.TabIndex = 69;
@@ -1053,7 +1054,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(407, 391);
+            this.label7.Location = new System.Drawing.Point(479, 396);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 17);
             this.label7.TabIndex = 68;
@@ -1062,7 +1063,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(549, 361);
+            this.label6.Location = new System.Drawing.Point(621, 366);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 17);
             this.label6.TabIndex = 67;
@@ -1071,7 +1072,7 @@
             // chkDica
             // 
             this.chkDica.AutoSize = true;
-            this.chkDica.Location = new System.Drawing.Point(626, 364);
+            this.chkDica.Location = new System.Drawing.Point(698, 369);
             this.chkDica.Name = "chkDica";
             this.chkDica.Size = new System.Drawing.Size(15, 14);
             this.chkDica.TabIndex = 66;
@@ -1080,7 +1081,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(404, 312);
+            this.label5.Location = new System.Drawing.Point(476, 317);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 17);
             this.label5.TabIndex = 65;
@@ -1089,7 +1090,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(404, 361);
+            this.label4.Location = new System.Drawing.Point(476, 366);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 17);
             this.label4.TabIndex = 64;
@@ -1098,7 +1099,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(549, 391);
+            this.label3.Location = new System.Drawing.Point(621, 396);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 17);
             this.label3.TabIndex = 63;
@@ -1107,7 +1108,7 @@
             // dgvPalavraForca
             // 
             this.dgvPalavraForca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPalavraForca.Location = new System.Drawing.Point(400, 157);
+            this.dgvPalavraForca.Location = new System.Drawing.Point(472, 162);
             this.dgvPalavraForca.Name = "dgvPalavraForca";
             this.dgvPalavraForca.ReadOnly = true;
             this.dgvPalavraForca.Size = new System.Drawing.Size(380, 33);
@@ -1290,7 +1291,7 @@
             // pbxMorto
             // 
             this.pbxMorto.Image = global::apListaLigada.Properties.Resources.Enforcado;
-            this.pbxMorto.Location = new System.Drawing.Point(285, -2);
+            this.pbxMorto.Location = new System.Drawing.Point(293, 8);
             this.pbxMorto.Name = "pbxMorto";
             this.pbxMorto.Size = new System.Drawing.Size(173, 356);
             this.pbxMorto.TabIndex = 61;
@@ -1317,31 +1318,26 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(69, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(69, 19);
             this.toolStripStatusLabel1.Text = "Mensagem:";
             // 
             // slRegistro
             // 
             this.slRegistro.Name = "slRegistro";
-            this.slRegistro.Size = new System.Drawing.Size(70, 17);
+            this.slRegistro.Size = new System.Drawing.Size(70, 19);
             this.slRegistro.Text = "Registro:0/0";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(55, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(55, 19);
             this.toolStripStatusLabel2.Text = "Situação:";
             // 
             // slSituacao
             // 
             this.slSituacao.Name = "slSituacao";
-            this.slSituacao.Size = new System.Drawing.Size(16, 17);
+            this.slSituacao.Size = new System.Drawing.Size(16, 19);
             this.slSituacao.Text = "...";
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timerTick);
             // 
             // horario
             // 
@@ -1349,6 +1345,25 @@
             this.horario.Name = "horario";
             this.horario.Size = new System.Drawing.Size(58, 19);
             this.horario.Text = "00:00";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Font = new System.Drawing.Font("Stylus BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(102, 19);
+            this.toolStripStatusLabel3.Text = "Data selecionada:";
+            // 
+            // dataSelecionada
+            // 
+            this.dataSelecionada.Font = new System.Drawing.Font("Stylus BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataSelecionada.Name = "dataSelecionada";
+            this.dataSelecionada.Size = new System.Drawing.Size(19, 19);
+            this.dataSelecionada.Text = "...";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timerTick);
             // 
             // timerHorario
             // 
@@ -1364,20 +1379,6 @@
             this.dtpSelecionarData.Size = new System.Drawing.Size(304, 33);
             this.dtpSelecionarData.TabIndex = 24;
             this.dtpSelecionarData.ValueChanged += new System.EventHandler(this.dtpSelecionarData_ValueChanged);
-            // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Font = new System.Drawing.Font("Stylus BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(102, 19);
-            this.toolStripStatusLabel3.Text = "Data selecionada:";
-            // 
-            // dataSelecionada
-            // 
-            this.dataSelecionada.Font = new System.Drawing.Font("Stylus BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataSelecionada.Name = "dataSelecionada";
-            this.dataSelecionada.Size = new System.Drawing.Size(19, 19);
-            this.dataSelecionada.Text = "...";
             // 
             // FrmDicionario
             // 

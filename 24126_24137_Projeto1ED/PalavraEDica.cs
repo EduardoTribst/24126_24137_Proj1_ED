@@ -14,7 +14,7 @@ namespace apListaLigada
     {
         private string palavra;
 
-        const int tamanhoPalavra = 30;
+        const int tamanhoPalavra = 30; //NAO TEM Q SER 15 NAO????
 
         private string dica;
 
@@ -25,10 +25,20 @@ namespace apListaLigada
             get { return tamanhoPalavra; }
         }
 
+
+
         public string Dica { get; set; }
 
         public bool[] Acertou { get => acertou; }
         public string Palavra { get => palavra; set => palavra = value; }
+
+        public void AcabouOJogo() //Precisa deixar as letras do vetor de acertou como false
+        {
+            for (int i = 0; i < acertou.Length; i++)
+            {
+                acertou[i] = false;
+            }
+        }
 
         public PalavraEDica(string palavra, string dica)
         {
