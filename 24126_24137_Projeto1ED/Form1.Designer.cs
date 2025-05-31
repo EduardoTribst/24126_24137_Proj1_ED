@@ -57,7 +57,7 @@
             this.rbFrente = new System.Windows.Forms.RadioButton();
             this.lsbDados = new System.Windows.Forms.ListBox();
             this.tpForca = new System.Windows.Forms.TabPage();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblModoDificil = new System.Windows.Forms.Label();
             this.chkModoDificil = new System.Windows.Forms.CheckBox();
             this.pbxMorto = new System.Windows.Forms.PictureBox();
             this.pbxPersonagemFeliz = new System.Windows.Forms.PictureBox();
@@ -259,7 +259,7 @@
             this.btnProximo.Image = global::apListaLigada.Properties.Resources.iconeProximo_1_;
             this.btnProximo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(56, 43);
+            this.btnProximo.Size = new System.Drawing.Size(55, 43);
             this.btnProximo.Text = "Próximo";
             this.btnProximo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
@@ -330,7 +330,7 @@
             this.btnExcluir.Image = global::apListaLigada.Properties.Resources.iconeDeletar_1_;
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(46, 43);
+            this.btnExcluir.Size = new System.Drawing.Size(45, 43);
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -447,7 +447,7 @@
             // 
             // tpForca
             // 
-            this.tpForca.Controls.Add(this.label8);
+            this.tpForca.Controls.Add(this.lblModoDificil);
             this.tpForca.Controls.Add(this.chkModoDificil);
             this.tpForca.Controls.Add(this.pbxMorto);
             this.tpForca.Controls.Add(this.pbxPersonagemFeliz);
@@ -492,14 +492,15 @@
             this.tpForca.TabIndex = 2;
             this.tpForca.Text = "Forca";
             // 
-            // label8
+            // lblModoDificil
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(735, 367);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 17);
-            this.label8.TabIndex = 79;
-            this.label8.Text = "Modo dificil";
+            this.lblModoDificil.AutoSize = true;
+            this.lblModoDificil.Location = new System.Drawing.Point(735, 367);
+            this.lblModoDificil.Name = "lblModoDificil";
+            this.lblModoDificil.Size = new System.Drawing.Size(79, 17);
+            this.lblModoDificil.TabIndex = 79;
+            this.lblModoDificil.Text = "Modo dificil";
+            this.lblModoDificil.Visible = false;
             // 
             // chkModoDificil
             // 
@@ -509,6 +510,7 @@
             this.chkModoDificil.Size = new System.Drawing.Size(15, 14);
             this.chkModoDificil.TabIndex = 78;
             this.chkModoDificil.UseVisualStyleBackColor = true;
+            this.chkModoDificil.Visible = false;
             // 
             // pbxMorto
             // 
@@ -1109,6 +1111,7 @@
             this.chkDica.Size = new System.Drawing.Size(15, 14);
             this.chkDica.TabIndex = 66;
             this.chkDica.UseVisualStyleBackColor = true;
+            this.chkDica.CheckedChanged += new System.EventHandler(this.chkDica_CheckedChanged);
             // 
             // label5
             // 
@@ -1571,7 +1574,7 @@
         private System.Windows.Forms.DateTimePicker dtpSelecionarData;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel dataSelecionada;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblModoDificil;
         private System.Windows.Forms.CheckBox chkModoDificil;
     }
 }

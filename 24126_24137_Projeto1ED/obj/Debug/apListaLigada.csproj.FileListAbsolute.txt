@@ -117,3 +117,13 @@ D:\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.cs
 D:\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.csproj.CoreCompileInputs.cache
 D:\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.exe
 D:\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.pdb
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\bin\Debug\apListaLigada.exe.config
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\bin\Debug\apListaLigada.exe
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\bin\Debug\apListaLigada.pdb
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.csproj.AssemblyReference.cache
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.FrmDicionario.resources
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.Properties.Resources.resources
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.csproj.GenerateResource.cache
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.csproj.CoreCompileInputs.cache
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.exe
+C:\Users\eduar\OneDrive\Documentos\GitHub\24126_24137_Proj1_ED\24126_24137_Projeto1ED\obj\Debug\apListaLigada.pdb

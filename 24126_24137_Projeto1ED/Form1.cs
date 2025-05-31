@@ -603,5 +603,19 @@ namespace apListaLigada
         {
             dataSelecionada.Text = dtpSelecionarData.Value.ToString().Substring(0, 10);
         }
+
+        private void chkDica_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkDica.Checked)
+            {
+                lblModoDificil.Visible = true;
+                chkModoDificil.Visible = true;
+            }
+            else
+            {
+                lblModoDificil.Visible = false;
+                chkModoDificil.Visible = false;
+            }
+        }
     }
 }
