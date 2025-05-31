@@ -376,6 +376,13 @@ namespace apListaLigada
             pbxMorto.Visible = true;
             pbxCabecaVivo.Visible = false;
             pbxCabecaMorto.Visible = true;
+
+            // preencher a palavra
+            for (int i = 0; i < lista1.Atual.Info.Palavra.Length; i++)
+            {
+                dgvPalavraForca.Rows[0].Cells[i].Value = lista1.Atual.Info.Palavra[i];
+            }
+
             TerminarJogo();
         }
 
@@ -456,12 +463,19 @@ namespace apListaLigada
             pontos = 0;
             lblErros.Text = erros.ToString();
             lblPontos.Text = pontos.ToString();
-            int quantasPalavrasPassadas = random.Next(lista1.QuantosNos);
-            lista1.PosicionarNoInicio();
-            for (int i = 0; i < quantasPalavrasPassadas; i++)
+
+            // pega uma palavra nova ate que não seja a mesma da rodada anterior
+            string palavraAnterior = lista1.Atual.Info.Palavra;
+            while (palavraAnterior == lista1.Atual.Info.Palavra)
             {
-                lista1.Avancar();
+                int quantasPalavrasPassadas = random.Next(lista1.QuantosNos);
+                lista1.PosicionarNoInicio();
+                for (int i = 0; i < quantasPalavrasPassadas; i++)
+                {
+                    lista1.Avancar();
+                }
             }
+
             String palavraSelecionada = lista1.Atual.Info.Palavra;
             char[] letrasPalavra = palavraSelecionada.ToCharArray();
 
@@ -483,6 +497,10 @@ namespace apListaLigada
                 tempo = 30;
                 timer1.Start();
                 lblDica.Text = lista1.Atual.Info.Dica;
+            }
+            else
+            {
+                lblDica.Text = "(desabilitada)";
             }
 
 

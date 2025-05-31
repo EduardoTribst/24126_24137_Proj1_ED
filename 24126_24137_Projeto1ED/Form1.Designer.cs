@@ -57,6 +57,7 @@
             this.rbFrente = new System.Windows.Forms.RadioButton();
             this.lsbDados = new System.Windows.Forms.ListBox();
             this.tpForca = new System.Windows.Forms.TabPage();
+            this.pbxMorto = new System.Windows.Forms.PictureBox();
             this.pbxPersonagemFeliz = new System.Windows.Forms.PictureBox();
             this.pbxMaoDireita = new System.Windows.Forms.PictureBox();
             this.gbxTeclado = new System.Windows.Forms.GroupBox();
@@ -131,7 +132,6 @@
             this.pbxBaseForca = new System.Windows.Forms.PictureBox();
             this.pbxMeioForca = new System.Windows.Forms.PictureBox();
             this.pbxViradaForca = new System.Windows.Forms.PictureBox();
-            this.pbxMorto = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
@@ -149,6 +149,7 @@
             this.tpListagem.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tpForca.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPersonagemFeliz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).BeginInit();
             this.gbxTeclado.SuspendLayout();
@@ -171,7 +172,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxBaseForca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMeioForca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxViradaForca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -257,7 +257,7 @@
             this.btnProximo.Image = global::apListaLigada.Properties.Resources.iconeProximo_1_;
             this.btnProximo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(55, 43);
+            this.btnProximo.Size = new System.Drawing.Size(56, 43);
             this.btnProximo.Text = "Próximo";
             this.btnProximo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
@@ -328,7 +328,7 @@
             this.btnExcluir.Image = global::apListaLigada.Properties.Resources.iconeDeletar_1_;
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(45, 43);
+            this.btnExcluir.Size = new System.Drawing.Size(46, 43);
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -487,6 +487,16 @@
             this.tpForca.Size = new System.Drawing.Size(875, 525);
             this.tpForca.TabIndex = 2;
             this.tpForca.Text = "Forca";
+            // 
+            // pbxMorto
+            // 
+            this.pbxMorto.Image = global::apListaLigada.Properties.Resources.Enforcado;
+            this.pbxMorto.Location = new System.Drawing.Point(293, 8);
+            this.pbxMorto.Name = "pbxMorto";
+            this.pbxMorto.Size = new System.Drawing.Size(173, 356);
+            this.pbxMorto.TabIndex = 61;
+            this.pbxMorto.TabStop = false;
+            this.pbxMorto.Visible = false;
             // 
             // pbxPersonagemFeliz
             // 
@@ -1007,11 +1017,11 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Curlz MT", 55.25F, System.Drawing.FontStyle.Bold);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 55.25F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label12.Location = new System.Drawing.Point(463, 3);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(240, 98);
+            this.label12.Size = new System.Drawing.Size(274, 85);
             this.label12.TabIndex = 73;
             this.label12.Text = "Forca !";
             // 
@@ -1288,16 +1298,6 @@
             this.pbxViradaForca.TabIndex = 0;
             this.pbxViradaForca.TabStop = false;
             // 
-            // pbxMorto
-            // 
-            this.pbxMorto.Image = global::apListaLigada.Properties.Resources.Enforcado;
-            this.pbxMorto.Location = new System.Drawing.Point(293, 8);
-            this.pbxMorto.Name = "pbxMorto";
-            this.pbxMorto.Size = new System.Drawing.Size(173, 356);
-            this.pbxMorto.TabIndex = 61;
-            this.pbxMorto.TabStop = false;
-            this.pbxMorto.Visible = false;
-            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -1309,55 +1309,55 @@
             this.horario,
             this.toolStripStatusLabel3,
             this.dataSelecionada});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 614);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 613);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(900, 24);
+            this.statusStrip1.Size = new System.Drawing.Size(900, 25);
             this.statusStrip1.TabIndex = 23;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(69, 19);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(69, 20);
             this.toolStripStatusLabel1.Text = "Mensagem:";
             // 
             // slRegistro
             // 
             this.slRegistro.Name = "slRegistro";
-            this.slRegistro.Size = new System.Drawing.Size(70, 19);
+            this.slRegistro.Size = new System.Drawing.Size(70, 20);
             this.slRegistro.Text = "Registro:0/0";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(55, 19);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(55, 20);
             this.toolStripStatusLabel2.Text = "Situação:";
             // 
             // slSituacao
             // 
             this.slSituacao.Name = "slSituacao";
-            this.slSituacao.Size = new System.Drawing.Size(16, 19);
+            this.slSituacao.Size = new System.Drawing.Size(16, 20);
             this.slSituacao.Text = "...";
             // 
             // horario
             // 
-            this.horario.Font = new System.Drawing.Font("Stylus BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.horario.Name = "horario";
-            this.horario.Size = new System.Drawing.Size(58, 19);
+            this.horario.Size = new System.Drawing.Size(49, 20);
             this.horario.Text = "00:00";
             // 
             // toolStripStatusLabel3
             // 
-            this.toolStripStatusLabel3.Font = new System.Drawing.Font("Stylus BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripStatusLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(102, 19);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(106, 20);
             this.toolStripStatusLabel3.Text = "Data selecionada:";
             // 
             // dataSelecionada
             // 
-            this.dataSelecionada.Font = new System.Drawing.Font("Stylus BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataSelecionada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataSelecionada.Name = "dataSelecionada";
-            this.dataSelecionada.Size = new System.Drawing.Size(19, 19);
+            this.dataSelecionada.Size = new System.Drawing.Size(16, 20);
             this.dataSelecionada.Text = "...";
             // 
             // timer1
@@ -1372,11 +1372,11 @@
             // 
             // dtpSelecionarData
             // 
-            this.dtpSelecionarData.CalendarFont = new System.Drawing.Font("Stylus BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpSelecionarData.Font = new System.Drawing.Font("Stylus BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpSelecionarData.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpSelecionarData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpSelecionarData.Location = new System.Drawing.Point(563, 12);
             this.dtpSelecionarData.Name = "dtpSelecionarData";
-            this.dtpSelecionarData.Size = new System.Drawing.Size(304, 33);
+            this.dtpSelecionarData.Size = new System.Drawing.Size(304, 26);
             this.dtpSelecionarData.TabIndex = 24;
             this.dtpSelecionarData.ValueChanged += new System.EventHandler(this.dtpSelecionarData_ValueChanged);
             // 
@@ -1403,6 +1403,7 @@
             this.groupBox1.PerformLayout();
             this.tpForca.ResumeLayout(false);
             this.tpForca.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPersonagemFeliz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaoDireita)).EndInit();
             this.gbxTeclado.ResumeLayout(false);
@@ -1425,7 +1426,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxBaseForca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMeioForca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxViradaForca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMorto)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
