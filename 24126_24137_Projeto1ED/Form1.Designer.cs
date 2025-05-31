@@ -57,6 +57,8 @@
             this.rbFrente = new System.Windows.Forms.RadioButton();
             this.lsbDados = new System.Windows.Forms.ListBox();
             this.tpForca = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
+            this.chkModoDificil = new System.Windows.Forms.CheckBox();
             this.pbxMorto = new System.Windows.Forms.PictureBox();
             this.pbxPersonagemFeliz = new System.Windows.Forms.PictureBox();
             this.pbxMaoDireita = new System.Windows.Forms.PictureBox();
@@ -445,6 +447,8 @@
             // 
             // tpForca
             // 
+            this.tpForca.Controls.Add(this.label8);
+            this.tpForca.Controls.Add(this.chkModoDificil);
             this.tpForca.Controls.Add(this.pbxMorto);
             this.tpForca.Controls.Add(this.pbxPersonagemFeliz);
             this.tpForca.Controls.Add(this.pbxMaoDireita);
@@ -487,6 +491,24 @@
             this.tpForca.Size = new System.Drawing.Size(875, 525);
             this.tpForca.TabIndex = 2;
             this.tpForca.Text = "Forca";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(735, 367);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 17);
+            this.label8.TabIndex = 79;
+            this.label8.Text = "Modo dificil";
+            // 
+            // chkModoDificil
+            // 
+            this.chkModoDificil.AutoSize = true;
+            this.chkModoDificil.Location = new System.Drawing.Point(820, 370);
+            this.chkModoDificil.Name = "chkModoDificil";
+            this.chkModoDificil.Size = new System.Drawing.Size(15, 14);
+            this.chkModoDificil.TabIndex = 78;
+            this.chkModoDificil.UseVisualStyleBackColor = true;
             // 
             // pbxMorto
             // 
@@ -1549,6 +1571,8 @@
         private System.Windows.Forms.DateTimePicker dtpSelecionarData;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel dataSelecionada;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox chkModoDificil;
     }
 }
 

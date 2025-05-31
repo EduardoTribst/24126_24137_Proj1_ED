@@ -72,13 +72,15 @@ namespace apListaLigada
 
 	    public bool TemNaPalavra(char letra) 
 	    {
-	        bool tem = false;
+            // variavel para retornar se a letra existe na palavra
+            bool tem = false;
 
 	        for (int i = 0; i < Palavra.Length ; i++) 
 	        {
 		        if (Palavra[i] == letra) 
 		        {
-		            tem = true;
+                    // marca a letra como acertada no vetor acertou
+                    tem = true;
 		            acertou[i] = true;
 		        }
 	        }

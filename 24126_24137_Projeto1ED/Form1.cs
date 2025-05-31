@@ -145,6 +145,7 @@ namespace apListaLigada
                         if (lista1.Remover(new PalavraEDica(txtPalavra.Text, "")))
                         {
                             MessageBox.Show("Palavra removida");
+                            lista1.PosicionarNoInicio(); // posiciona a lista no início
                             ExibirRegistroAtual();
                         }
                         else
@@ -314,39 +315,63 @@ namespace apListaLigada
 
         private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
         {
+            // se o jogo estiver em andamento, não permite mudar de aba
             if (bloquearTabControl)
             {
                 e.Cancel = true;
             }
         }
 
+        // funcao generica para os botoes de letra
         private void btnLetra_Click(object sender, EventArgs e)
         {
             Button button;
-            if (sender is Button)
+            if (sender is Button) // errou
             {
+                // salva o botão clicado e verifica se a letra está na palavra
                 button = sender as Button;
                 char caracter = button.Text.ToCharArray()[0];
                 if (!lista1.Atual.Info.TemNaPalavra(caracter))
                 {
-                    erros++;
-                    if (pontos > 0)
+                    // soma nos erros e diminui os pontos
+                    if (chkModoDificil.Checked && !chkDica.Checked) // modo difícil == mais penalidades
                     {
-                        pontos--;
+                        erros += 2;
+                        if (pontos > 0)
+                        {
+                            pontos -= 2;
+
+                            if (pontos < 0)
+                            {
+                                pontos = 0; // garante que os pontos não fiquem negativos
+                            }
+                        }
                     }
-                        
+                    else // modo normal
+                    {
+                        erros++;
+                        if (pontos > 0)
+                        {
+                            pontos--;
+                        }
+                    }
+
+                    // muda a cor de fundo para vermelho
+                    button.BackColor = System.Drawing.Color.Red;
+
+                    // exibe as pontuacoes e desenha o corpo do personagem
                     lblErros.Text = erros.ToString();
                     lblPontos.Text = pontos.ToString();
                     DesenharCorpo();
-                    
                 }
-                else
-                {
+                else // acertou
+                { 
+                    // aumenta os pontos de exibe no formulario
                     pontos++;
 
                     lblPontos.Text = pontos.ToString();
 
-                    // verificar se ganhou
+                    // verificar se ganhou e as letras acertadas no dgv
                     bool achouTodasAsLetras = true;
                     for (int i = 0; i < lista1.Atual.Info.Palavra.Length; i++)
                     {
@@ -356,10 +381,15 @@ namespace apListaLigada
                         }
                         else
                         {
+                            // caso alguma letra não tenha sido acertada, muda a variável para 
+                            // false para indicar que a pessoa ainda nao achou todas as letras
                             achouTodasAsLetras = false;
                         }
                     }
-                    
+
+                    // muda a cor do fundo do botão para verde
+                    button.BackColor = System.Drawing.Color.Green;
+
                     if (achouTodasAsLetras)
                     {
                         // venceu!!!
@@ -367,17 +397,19 @@ namespace apListaLigada
                     }
                 }
 
+                // desabilita o botão clicado
                 button.Enabled = false;
             }
         }
 
         private void Perdeu()
         {
+            // exibe o personagem morto
             pbxMorto.Visible = true;
             pbxCabecaVivo.Visible = false;
             pbxCabecaMorto.Visible = true;
 
-            // preencher a palavra
+            // preencher a palavra para o usuário saber qual era
             for (int i = 0; i < lista1.Atual.Info.Palavra.Length; i++)
             {
                 dgvPalavraForca.Rows[0].Cells[i].Value = lista1.Atual.Info.Palavra[i];
@@ -388,15 +420,17 @@ namespace apListaLigada
 
         private void Venceu()
         {
+            // limpa o personagem e exibe a sua versão feliz
             LimparPersonagem();
             pbxPersonagemFeliz.Visible = true;
             VisibilidadeForca(false);
-            MessageBox.Show("Você venceu!!!!");
             TerminarJogo();
+            MessageBox.Show("Você venceu!!!!");
         }
 
         private void TerminarJogo()
         {
+            // reseta o estado do jogo para o padrão, pronto para o proximo jogo
             lista1.Atual.Info.AcabouOJogo();
             bloquearTabControl = false;
 
@@ -405,17 +439,23 @@ namespace apListaLigada
             {
                 if (ctrl is Button)
                 {
-                    ctrl.Enabled = false;
+                    ctrl.Enabled = false; // desabilita todos os botoes de letra
+
+                    ctrl.BackColor = System.Drawing.Color.LightGray; // reseta a cor dos botões
                 }
             }
 
+            // para o timer e habilita o botao de iniciar jogo
             timer1.Stop();
 
             btnInicia.Enabled = true;
+            chkDica.Enabled = true;
+            chkModoDificil.Enabled = true;
         }
 
         private void VisibilidadeForca(bool visivel)
         {
+            // define a visibilidade das imagens da forca
             PictureBox[] forca = { pbxBaseForca, pbxMeioForca, pbxViradaForca, pbxFimForca, pbxBaseCorda, pbxMeioCorda, pbxCimaCorda };
             foreach (PictureBox imagem in forca)
             {
@@ -425,8 +465,21 @@ namespace apListaLigada
 
         private void DesenharCorpo()
         {
+            // desenha o corpo de acordo com o numero de erros
             PictureBox[] partes = { pbxCabecaVivo, pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda };
-            partes[erros - 1].Visible = true;
+
+            for (int i = 0; i < partes.Length; i++)
+            {
+                if (i < erros) // se o erro for menor que a parte do corpo, exibe a parte
+                {
+                    partes[i].Visible = true;
+                }
+                else // se não, deixa invisível
+                {
+                    partes[i].Visible = false;
+                }
+            }
+
             if (erros == 8)
             {
                 Perdeu();
@@ -435,6 +488,7 @@ namespace apListaLigada
 
         private void LimparPersonagem()
         {
+            // deixa o personagem invisível
             PictureBox[] partes = { pbxCabecaVivo, pbxPescoco, pbxTronco, pbxMaoDireita, pbxMaoEsquerda, pbxBermuda, pbxPernaDireita, pbxPernaEsquerda, pbxCabecaMorto, pbxMorto, pbxPersonagemFeliz };
             for (int i = 0; i < partes.Length; i++)
             {
@@ -445,8 +499,11 @@ namespace apListaLigada
 
         private void btnInicia_Click(object sender, EventArgs e)
         {
+            // inicia o jogo, reseta as variaveis e exibe a forca
             bloquearTabControl = true;
             btnInicia.Enabled = false;
+            chkDica.Enabled = false;
+            chkModoDificil.Enabled = false;
 
             LimparPersonagem();
             VisibilidadeForca(true);
@@ -464,8 +521,13 @@ namespace apListaLigada
             lblErros.Text = erros.ToString();
             lblPontos.Text = pontos.ToString();
 
-            // pega uma palavra nova ate que não seja a mesma da rodada anterior
-            string palavraAnterior = lista1.Atual.Info.Palavra;
+            string palavraAnterior = "";
+
+            for (int i = 0; i< dgvPalavraForca.Columns.Count; i++)
+            {
+                palavraAnterior += dgvPalavraForca.Rows[0].Cells[i].Value?.ToString() ?? string.Empty; // concatena as letras da palavra anterior
+            }
+
             while (palavraAnterior == lista1.Atual.Info.Palavra)
             {
                 int quantasPalavrasPassadas = random.Next(lista1.QuantosNos);
@@ -476,6 +538,7 @@ namespace apListaLigada
                 }
             }
 
+            // encontra a palavra e exibe os espacos no dgv
             String palavraSelecionada = lista1.Atual.Info.Palavra;
             char[] letrasPalavra = palavraSelecionada.ToCharArray();
 
@@ -492,10 +555,18 @@ namespace apListaLigada
 
             dgvPalavraForca.Rows[0].Height = 33;
 
+            // opcao de dica
             if (chkDica.Checked)
             {
-                tempo = 30;
-                timer1.Start();
+                if (chkModoDificil.Checked) // menos tempo
+                {
+                    tempo = 10;
+                }
+                else // tempo normal
+                {
+                    tempo = 30;
+                }
+                    timer1.Start();
                 lblDica.Text = lista1.Atual.Info.Dica;
             }
             else
@@ -508,6 +579,7 @@ namespace apListaLigada
 
         private void timerTick(object sender, EventArgs e)
         {
+            // a cada tick do timer, diminui o tempo e atualiza o label
             tempo -= 1;
             lblTempo.Text = tempo.ToString();
             if (tempo <= 0)
@@ -520,6 +592,8 @@ namespace apListaLigada
             }
         }
 
+        // coisas abaixo feitas por diversao, gosto de um relogio e data no form
+        // nao leva a serio so queria fazer um relogio
         private void AtualizarHorario(object sender, EventArgs e)
         {
             horario.Text = DateTime.Now.ToString().Substring(10, 9);
