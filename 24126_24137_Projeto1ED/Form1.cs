@@ -34,12 +34,13 @@ namespace apListaLigada
             INCLUINDO,
             NAVEGANDO,
             ALTERANDO,
-            EXCLUINDO
+            EXCLUINDO,
+            JOGANDO
         }
 
 		// método para alterar a situação atual, exibindo a mensagem correspondente
 		// e atualizando o status da situação no formulário
-		private void alterarSituacao(Situacao novaSituacao)
+		private void AlterarSituacao(Situacao novaSituacao)
         {
             situacaoAtual = novaSituacao;
             switch (situacaoAtual) // exibe a mensagem
@@ -55,6 +56,9 @@ namespace apListaLigada
                     break;
                 case Situacao.EXCLUINDO:
                     slSituacao.Text = "EXCLUINDO (clique em CANCELAR para cancelar o processo ou EXCLUIR novamente para confirmar)";
+                    break;
+                case Situacao.JOGANDO:
+                    slSituacao.Text = "JOGANDO";
                     break;
             };
         }
@@ -103,7 +107,7 @@ namespace apListaLigada
             }
             else // se não, altera a situação para inclusão
             {
-                alterarSituacao(Situacao.INCLUINDO);
+                AlterarSituacao(Situacao.INCLUINDO);
 			}
 		}
 
@@ -156,7 +160,7 @@ namespace apListaLigada
 				}
                 else // se não, altera a situação para a de exclusão
                 {
-                    alterarSituacao(Situacao.EXCLUINDO);
+                    AlterarSituacao(Situacao.EXCLUINDO);
                 }
             }
 			else
@@ -266,7 +270,7 @@ namespace apListaLigada
             }
             else // altera a situação para edição
             {
-                alterarSituacao(Situacao.ALTERANDO);
+                AlterarSituacao(Situacao.ALTERANDO);
             }
         }
 
@@ -279,7 +283,18 @@ namespace apListaLigada
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             // cancela qualquer estado
-            alterarSituacao(Situacao.NAVEGANDO);
+            AlterarSituacao(Situacao.NAVEGANDO);
+        }
+
+        private void EstadoBotoesNavegacao(bool ligados)
+        {
+            foreach (var item in toolStrip1.Items)
+            {
+                if (item is ToolStripButton button && button.Text != "Sair")
+                {
+                    button.Enabled = ligados;
+                }
+            }
         }
 
         private void FrmDicionario_Load(object sender, EventArgs e)
@@ -288,7 +303,7 @@ namespace apListaLigada
 			FazerLeitura(ref lista1);
 
 			// exibe os dados na ordem crescente
-			alterarSituacao(Situacao.NAVEGANDO);
+			AlterarSituacao(Situacao.NAVEGANDO);
 			lista1.PosicionarNoInicio();
             ExibirRegistroAtual();
         }
@@ -307,8 +322,18 @@ namespace apListaLigada
         {
             switch ((sender as TabControl).SelectedIndex)
             {
+                case 0: // cadastro
+                    btnInicio.PerformClick(); // manda para o inicio da lista de palavras
+                    EstadoBotoesNavegacao(true);
+                    break;
+
                 case 1: // listagem
                     rbFrente.PerformClick(); // exibe os dados na ordem crescente
+                    EstadoBotoesNavegacao(false);
+                    break;
+
+                case 2: // forca
+                    EstadoBotoesNavegacao(false);
                     break;
             }
         }
@@ -431,6 +456,8 @@ namespace apListaLigada
         private void TerminarJogo()
         {
             // reseta o estado do jogo para o padrão, pronto para o proximo jogo
+            AlterarSituacao(Situacao.NAVEGANDO);
+
             lista1.Atual.Info.AcabouOJogo();
             bloquearTabControl = false;
 
@@ -500,6 +527,8 @@ namespace apListaLigada
         private void btnInicia_Click(object sender, EventArgs e)
         {
             // inicia o jogo, reseta as variaveis e exibe a forca
+            AlterarSituacao(Situacao.JOGANDO);
+
             bloquearTabControl = true;
             btnInicia.Enabled = false;
             chkDica.Enabled = false;
@@ -522,13 +551,12 @@ namespace apListaLigada
             lblPontos.Text = pontos.ToString();
 
             string palavraAnterior = "";
-
             for (int i = 0; i< dgvPalavraForca.Columns.Count; i++)
             {
-                palavraAnterior += dgvPalavraForca.Rows[0].Cells[i].Value?.ToString() ?? string.Empty; // concatena as letras da palavra anterior
+                palavraAnterior += dgvPalavraForca.Rows[0].Cells[i].Value?.ToString(); // concatena as letras da palavra anterior
             }
 
-            while (palavraAnterior == lista1.Atual.Info.Palavra)
+            if (palavraAnterior == "") // é a primeira palavra
             {
                 int quantasPalavrasPassadas = random.Next(lista1.QuantosNos);
                 lista1.PosicionarNoInicio();
@@ -537,7 +565,19 @@ namespace apListaLigada
                     lista1.Avancar();
                 }
             }
-
+            else // ja jogou alguma vez
+            {
+                while (palavraAnterior == lista1.Atual.Info.Palavra)
+                {
+                    int quantasPalavrasPassadas = random.Next(lista1.QuantosNos);
+                    lista1.PosicionarNoInicio();
+                    for (int i = 0; i < quantasPalavrasPassadas; i++)
+                    {
+                        lista1.Avancar();
+                    }
+                }
+            }
+            
             // encontra a palavra e exibe os espacos no dgv
             String palavraSelecionada = lista1.Atual.Info.Palavra;
             char[] letrasPalavra = palavraSelecionada.ToCharArray();
@@ -553,7 +593,9 @@ namespace apListaLigada
                 dgvPalavraForca.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
 
+            dgvPalavraForca.AllowUserToResizeColumns = true;
             dgvPalavraForca.Rows[0].Height = 33;
+            dgvPalavraForca.AllowUserToResizeColumns = false;
 
             // opcao de dica
             if (chkDica.Checked)
@@ -601,7 +643,9 @@ namespace apListaLigada
 
         private void dtpSelecionarData_ValueChanged(object sender, EventArgs e)
         {
+            espacoEmBranco.Spring = false;
             dataSelecionada.Text = dtpSelecionarData.Value.ToString().Substring(0, 10);
+            espacoEmBranco.Spring = true;
         }
 
     }

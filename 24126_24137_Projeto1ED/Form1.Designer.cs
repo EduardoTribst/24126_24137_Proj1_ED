@@ -145,6 +145,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerHorario = new System.Windows.Forms.Timer(this.components);
             this.dtpSelecionarData = new System.Windows.Forms.DateTimePicker();
+            this.espacoEmBranco = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCadastro.SuspendLayout();
@@ -259,7 +260,7 @@
             this.btnProximo.Image = global::apListaLigada.Properties.Resources.iconeProximo_1_;
             this.btnProximo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(55, 43);
+            this.btnProximo.Size = new System.Drawing.Size(56, 43);
             this.btnProximo.Text = "Próximo";
             this.btnProximo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
@@ -330,7 +331,7 @@
             this.btnExcluir.Image = global::apListaLigada.Properties.Resources.iconeDeletar_1_;
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(45, 43);
+            this.btnExcluir.Size = new System.Drawing.Size(46, 43);
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -500,7 +501,6 @@
             this.lblModoDificil.Size = new System.Drawing.Size(79, 17);
             this.lblModoDificil.TabIndex = 79;
             this.lblModoDificil.Text = "Modo dificil";
-            this.lblModoDificil.Visible = false;
             // 
             // chkModoDificil
             // 
@@ -510,7 +510,6 @@
             this.chkModoDificil.Size = new System.Drawing.Size(15, 14);
             this.chkModoDificil.TabIndex = 78;
             this.chkModoDificil.UseVisualStyleBackColor = true;
-            this.chkModoDificil.Visible = false;
             // 
             // pbxMorto
             // 
@@ -1111,7 +1110,6 @@
             this.chkDica.Size = new System.Drawing.Size(15, 14);
             this.chkDica.TabIndex = 66;
             this.chkDica.UseVisualStyleBackColor = true;
-            this.chkDica.CheckedChanged += new System.EventHandler(this.chkDica_CheckedChanged);
             // 
             // label5
             // 
@@ -1331,6 +1329,7 @@
             this.slRegistro,
             this.toolStripStatusLabel2,
             this.slSituacao,
+            this.espacoEmBranco,
             this.horario,
             this.toolStripStatusLabel3,
             this.dataSelecionada});
@@ -1366,24 +1365,24 @@
             // 
             // horario
             // 
-            this.horario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horario.Font = new System.Drawing.Font("Stylus BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.horario.Name = "horario";
-            this.horario.Size = new System.Drawing.Size(49, 20);
+            this.horario.Size = new System.Drawing.Size(58, 20);
             this.horario.Text = "00:00";
             // 
             // toolStripStatusLabel3
             // 
-            this.toolStripStatusLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripStatusLabel3.Font = new System.Drawing.Font("Stylus BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(106, 20);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(107, 20);
             this.toolStripStatusLabel3.Text = "Data selecionada:";
             // 
             // dataSelecionada
             // 
-            this.dataSelecionada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataSelecionada.Font = new System.Drawing.Font("Stylus BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataSelecionada.Name = "dataSelecionada";
-            this.dataSelecionada.Size = new System.Drawing.Size(16, 20);
-            this.dataSelecionada.Text = "...";
+            this.dataSelecionada.Size = new System.Drawing.Size(191, 20);
+            this.dataSelecionada.Text = "nenhuma data selecionada";
             // 
             // timer1
             // 
@@ -1398,12 +1397,19 @@
             // dtpSelecionarData
             // 
             this.dtpSelecionarData.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpSelecionarData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpSelecionarData.Font = new System.Drawing.Font("Stylus BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpSelecionarData.Location = new System.Drawing.Point(563, 12);
             this.dtpSelecionarData.Name = "dtpSelecionarData";
-            this.dtpSelecionarData.Size = new System.Drawing.Size(304, 26);
+            this.dtpSelecionarData.Size = new System.Drawing.Size(304, 27);
             this.dtpSelecionarData.TabIndex = 24;
             this.dtpSelecionarData.ValueChanged += new System.EventHandler(this.dtpSelecionarData_ValueChanged);
+            // 
+            // espacoEmBranco
+            // 
+            this.espacoEmBranco.AutoSize = false;
+            this.espacoEmBranco.Name = "espacoEmBranco";
+            this.espacoEmBranco.Size = new System.Drawing.Size(288, 20);
+            this.espacoEmBranco.Spring = true;
             // 
             // FrmDicionario
             // 
@@ -1576,6 +1582,7 @@
         private System.Windows.Forms.ToolStripStatusLabel dataSelecionada;
         private System.Windows.Forms.Label lblModoDificil;
         private System.Windows.Forms.CheckBox chkModoDificil;
+        private System.Windows.Forms.ToolStripStatusLabel espacoEmBranco;
     }
 }
 
