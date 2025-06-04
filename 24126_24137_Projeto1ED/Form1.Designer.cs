@@ -139,13 +139,13 @@
             this.slRegistro = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.slSituacao = new System.Windows.Forms.ToolStripStatusLabel();
+            this.espacoEmBranco = new System.Windows.Forms.ToolStripStatusLabel();
             this.horario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataSelecionada = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerHorario = new System.Windows.Forms.Timer(this.components);
             this.dtpSelecionarData = new System.Windows.Forms.DateTimePicker();
-            this.espacoEmBranco = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCadastro.SuspendLayout();
@@ -1040,11 +1040,11 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 55.25F, System.Drawing.FontStyle.Bold);
+            this.label12.Font = new System.Drawing.Font("Curlz MT", 56.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label12.Location = new System.Drawing.Point(463, 3);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(274, 85);
+            this.label12.Size = new System.Drawing.Size(244, 99);
             this.label12.TabIndex = 73;
             this.label12.Text = "Forca !";
             // 
@@ -1360,8 +1360,15 @@
             // slSituacao
             // 
             this.slSituacao.Name = "slSituacao";
-            this.slSituacao.Size = new System.Drawing.Size(16, 20);
-            this.slSituacao.Text = "...";
+            this.slSituacao.Size = new System.Drawing.Size(22, 20);
+            this.slSituacao.Text = ". . .";
+            // 
+            // espacoEmBranco
+            // 
+            this.espacoEmBranco.AutoSize = false;
+            this.espacoEmBranco.Name = "espacoEmBranco";
+            this.espacoEmBranco.Size = new System.Drawing.Size(470, 20);
+            this.espacoEmBranco.Spring = true;
             // 
             // horario
             // 
@@ -1381,8 +1388,8 @@
             // 
             this.dataSelecionada.Font = new System.Drawing.Font("Stylus BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataSelecionada.Name = "dataSelecionada";
-            this.dataSelecionada.Size = new System.Drawing.Size(191, 20);
-            this.dataSelecionada.Text = "nenhuma data selecionada";
+            this.dataSelecionada.Size = new System.Drawing.Size(34, 20);
+            this.dataSelecionada.Text = ". . .";
             // 
             // timer1
             // 
@@ -1398,18 +1405,11 @@
             // 
             this.dtpSelecionarData.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpSelecionarData.Font = new System.Drawing.Font("Stylus BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpSelecionarData.Location = new System.Drawing.Point(563, 12);
+            this.dtpSelecionarData.Location = new System.Drawing.Point(552, 12);
             this.dtpSelecionarData.Name = "dtpSelecionarData";
-            this.dtpSelecionarData.Size = new System.Drawing.Size(304, 27);
+            this.dtpSelecionarData.Size = new System.Drawing.Size(315, 27);
             this.dtpSelecionarData.TabIndex = 24;
             this.dtpSelecionarData.ValueChanged += new System.EventHandler(this.dtpSelecionarData_ValueChanged);
-            // 
-            // espacoEmBranco
-            // 
-            this.espacoEmBranco.AutoSize = false;
-            this.espacoEmBranco.Name = "espacoEmBranco";
-            this.espacoEmBranco.Size = new System.Drawing.Size(288, 20);
-            this.espacoEmBranco.Spring = true;
             // 
             // FrmDicionario
             // 

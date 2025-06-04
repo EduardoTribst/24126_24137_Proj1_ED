@@ -556,7 +556,7 @@ namespace apListaLigada
                 palavraAnterior += dgvPalavraForca.Rows[0].Cells[i].Value?.ToString(); // concatena as letras da palavra anterior
             }
 
-            if (palavraAnterior == "") // é a primeira palavra
+            if (palavraAnterior == "" || palavraAnterior == null) // é a primeira palavra
             {
                 int quantasPalavrasPassadas = random.Next(lista1.QuantosNos);
                 lista1.PosicionarNoInicio();
